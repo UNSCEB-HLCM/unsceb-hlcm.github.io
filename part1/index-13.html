@@ -1,0 +1,4308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+lang="en-GB"
+xmlns="http://www.w3.org/1999/xhtml"
+><head
+><meta
+content="text/html;charset=UTF-8"
+http-equiv="content-type"
+/><title
+>2 Akoma Ntoso: an overview</title
+><script
+src="index_files/expand-tabs.js"
+type="text/javascript"
+></script
+><link
+href="index.css"
+rel="stylesheet"
+type="text/css"
+/><style
+type="text/css"
+>
+body {
+    counter-reset: n-103-0 0 n-124-0 1 n-124-1 0 n-124-2 0 n-5105-0 0 n-5132-0 0 n-5141-0 0;
+}
+</style
+></head
+><body
+><div
+class="role-box"
+style="background-color: #00FF99; border-bottom-color: #C00000; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #C00000; border-left-style: solid; border-left-width: 1pt; border-right-color: #C00000; border-right-style: solid; border-right-width: 1pt; border-top-color: #C00000; border-top-style: solid; border-top-width: 1pt; counter-reset: n-124-1 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 2pt; padding-left: 7pt; padding-right: 7pt; padding-top: 2pt;"
+><p
+class="p-Heading1 n-124-0 pb--first pb--last"
+id="_Toc483439146"
+style="margin-left: 21.6pt;"
+>Akoma Ntoso: an overview</p
+></div
+><div
+class="role-box"
+style="background-color: #FFD966; border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; counter-reset: n-124-2 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 4pt; padding-left: 4pt; padding-right: 4pt; padding-top: 4pt;"
+><p
+class="p-Heading2 n-124-1 pb--first pb--last"
+id="_Toc483439147"
+style="margin-left: 28.8pt;"
+>Why Akoma Ntoso</p
+></div
+><p
+class="p-Saisieparagraph"
+style="background-color: transparent;"
+>The Akoma Ntoso<span
+style="vertical-align: super;"
+><a
+class="role-footnote-ref"
+href="#__FN7__"
+>7</a
+></span
+> (AKN) standard was developed to describe, in a machine-readable format, parliamentary, legislative and judicial documents. It was<span
+style="vertical-align: super;"
+> </span
+>originally developed in the context of the United Nations Department of Economic and Social Affairs<span
+class="c-FootnoteReference"
+style="color: #0000FF; text-decoration: underline;"
+><a
+class="role-footnote-ref"
+href="#__FN8__"
+>8</a
+></span
+> initiative to support African Parliaments in adopting ICT to foster transparency and accountability and was later handed over to the OASIS standard body’s LegalDocumentML Technical Committee<span
+class="c-FootnoteReference"
+style="color: #0000FF; text-decoration: underline;"
+><a
+class="role-footnote-ref"
+href="#__FN9__"
+>9</a
+></span
+><span
+class="c-Hyperlink"
+> (</span
+>LegalDocML), where it is being ratified to become an official standard.</p
+><p
+class="p-Normal"
+>Akoma Ntoso has been designed to take advantage of the common heritage found in all legal systems, while providing enough flexibility to adapt to all the variations of documents, languages and legal traditions.</p
+><p
+class="p-Normal"
+>The Akoma Ntoso standard makes the structural and semantic components of digital parliamentary documents fully accessible to machine-driven processes, thereby supporting the creation of high-quality smart information services and greatly improving efficiency, accountability and transparency of parliamentary activities based on international standards, best practices and guidelines. It is a document-centric standard that preserves the integrity of normative texts and designed to be flexible and support exceptions. It may be extended to address the individual requirements of organizations or specific characteristics of different legal traditions and languages.</p
+><p
+class="p-Normal"
+>Akoma Ntoso provides the UN system with a mature XML standard specifically tuned towards normative and parliamentary documents, whose validity is proven by the growing list of legislatures that are adopting it<span
+style="vertical-align: super;"
+><a
+class="role-footnote-ref"
+href="#__FN10__"
+>10</a
+></span
+>.</p
+><p
+class="p-Normal"
+>The adoption and the localisation of the Akoma Ntoso standard schema to specific requirements of the UN system of organizations, will enable the UN system to “deliver as one” and “deliver more with less” by supporting the development of value-chain workflows, advanced information services, smart knowledge discovery and effective multichannel dissemination.</p
+><div
+class="role-box"
+style="background-color: #FFD966; border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; counter-reset: n-124-2 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 4pt; padding-left: 4pt; padding-right: 4pt; padding-top: 4pt;"
+><p
+class="p-Heading2 n-124-1 pb--first pb--last"
+id="_Toc483439148"
+style="margin-left: 28.8pt;"
+>Akoma Ntoso Document Model</p
+></div
+><p
+class="p-Normal"
+>All Akoma Ntoso documents share the same root element <span
+style="color: #0000FF;"
+>&lt;akomaNtoso&gt;</span
+>, under which the specific document type is selected. The single root element is meant to better identify the root and separate the namespace and schema declaration (available in the root), and meaningful attributes (available in the document type element)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN11__"
+>11</a
+></span
+>.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE16__"
+style="margin-left: 49.65pt;"
+>AKN Document Types</p
+></div
+><p
+class="p-Normal"
+>In the table below we have listed Akoma Ntoso <span
+style="color: #0000FF;"
+>documentTypes</span
+><span
+class="c-FootnoteReference"
+style="color: #0000FF;"
+><a
+class="role-footnote-ref"
+href="#__FN12__"
+>12</a
+></span
+><span
+style="color: #0000FF;"
+> </span
+>by structure to better highlight the function, organization or role that each AKN <span
+style="color: #0000FF;"
+>documentType </span
+>is intended to address:</p
+><p
+class="p-Normal"
+></p
+><table
+class="t-TableNormal"
+style="table-layout: fixed; width: 100%;"
+><colgroup
+span="1"
+style="width: 68.65pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 84.15pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 334.05pt;"
+></colgroup
+><tbody
+><tr
+><td
+class="tc-TableNormal"
+colspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>AKN Document</span
+></p
+></td
+><td
+class="tc-TableNormal"
+rowspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Description</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Structure</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Types</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Hierarchical</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;bill&gt; </span
+><span
+style="font-weight: bold;"
+>| </span
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;act&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Normative draft (&lt;bill&gt;) and approved documents (&lt;act&gt;)</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model normative draft and approved documents issued by empowered bodies. They are usually drawn up according to a hierarchical structure in which the text is subdivided into sections or chapters and may be subdivided into clauses or articles, sub-paragraphs, etc.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Debate</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;debate&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Verbatim records of meetings</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model texts resulting from the transcription of meetings. The structure reflects the different sections of the debates and the questions and answers that may take place during deliberative body proceedings.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Judgment</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;judgment&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Formal decisions  in legal proceedings</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model documents in which a court of law or adjudicating authority makes a formal decision or specific determination following a legal proceeding. The structure reflects the typical narrative of judicial orders.<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN13__"
+>13</a
+></span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+rowspan="3"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Open</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;debateReport&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Reports and minutes of meetings</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model minutes or reports of official meeting, usually of the plenary or committee sessions. The structures are highly variable across organizations and traditions.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;statement&gt;</span
+><span
+class="c-FootnoteReference"
+style="color: #1212AE; font-weight: bold;"
+><a
+class="role-footnote-ref"
+href="#__FN14__"
+>14</a
+></span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Formal expressions of opinion or will</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model legal documents that may or may not be normative, but are fundamental for the life of an official institution, such as resolutions, decisions or official statements. The body of the document may be modelled to reflect custom structures.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;doc&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Unstructured documents</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model documents that do not fit in to any of the other typologies. This is a residual type to accommodate legal and non-legal material that is not covered by any other typology.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Amendment</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;amendment&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Formal instructions for modifications</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to represent formal instructions for modifications to existing normative documents.</p
+></td
+></tr
+></tbody
+></table
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE17__"
+style="margin-left: 49.65pt;"
+>AKN Document Collections</p
+></div
+><p
+class="p-contenutotabella"
+style="margin-bottom: 2.4pt; margin-right: -5.4pt; margin-top: 2.4pt; text-align: justify;"
+>The collection structure is used for all publications that include autonomous documents. To fully understand when collection structures should be used, we need to be aware of the fact that <span
+style="color: #000000;"
+>Akoma Ntoso makes a distinction between:</span
+></p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+><span
+style="font-weight: bold;"
+>Autonomous</span
+> <span
+style="font-weight: bold;"
+>documents,</span
+> which are pre-existing documents, issued by a defined authority that, usually but not always, have their own symbols or identifiers.</p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+><span
+style="font-weight: bold;"
+>Non-autonomous</span
+> <span
+style="font-weight: bold;"
+>documents,</span
+> which have functionally distinct contents with their own role and structure but are not autonomous because they have not yet been independently issued by a defined authority.</p
+><p
+class="p-Normal"
+>If a publication contains one or more autonomous documents <span
+style="color: #000000;"
+>in its main body</span
+>, one of the AKN <span
+style="color: #0000FF;"
+>documentTypes </span
+>listed in the table below must be used. Collection structures may contain any AKN <span
+style="color: #0000FF;"
+>documentType</span
+> including other collections.</p
+><p
+class="p-Normal"
+>Please note that b<span
+style="color: #000000;"
+>oth autonomous and non-autonomous documents may appear as </span
+><span
+style="color: #0000FF;"
+>attachments </span
+><span
+style="color: #000000;"
+>of any Akoma Ntoso </span
+><span
+style="color: #0000FF;"
+>documentType</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: Collection Document Types</span
+></p
+><table
+class="t-TableNormal"
+style="table-layout: fixed; width: 100%;"
+><colgroup
+span="1"
+style="width: 76.3pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 114.8pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 295.75pt;"
+></colgroup
+><thead
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+colspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>AKN Document</span
+></p
+></td
+><td
+class="tc-TableNormal"
+rowspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Description</span
+></p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Structure</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Types</span
+></p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+rowspan="3"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Collection</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;officialGazette&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Official compilations</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model an issue of an official compilation of an official publication body.</p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;amendmentList&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Compilation of amendments</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model a collection that includes the list of proposals for modifications submitted to official deliberative bodies for discussion. </p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 1pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;documentCollection&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+><span
+style="font-weight: bold;"
+>Collection of independent documents</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt;"
+>Used to model any document with one or more independent documents. It may be used to model a collections of documents.</p
+></td
+></tr
+></thead
+><tbody
+></tbody
+></table
+><p
+class="p-Heading4"
+id="__PAGE18__"
+>How to model collections </p
+><p
+class="p-Normal"
+>Collections in Akoma Ntoso are containers used to model documents that contain one or more autonomous documents. A “collection” uses the <span
+style="color: #0000FF;"
+>&lt;components&gt;</span
+> element to include within it any of the AKN document types, or even other document collections. Components may be organised in one of the following ways:</p
+><table
+class="t-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; margin-left: auto; margin-right: auto; table-layout: fixed; width: 100%;"
+><colgroup
+span="1"
+style="width: 162.35pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 162.25pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 162.25pt;"
+></colgroup
+><thead
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #000000; font-weight: bold;"
+>embedded in collectionBody</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #000000; font-weight: bold;"
+>embedded in documentCollection</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>only referenced</span
+></p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+>logical component(s) are included directly in the <span
+style="color: #0000FF;"
+>&lt;collectionBody&gt;</span
+> element</p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+>logical component(s) are referenced in the <span
+style="color: #0000FF;"
+>&lt;collectionBody&gt;</span
+> using the element <span
+style="color: #0000FF;"
+>&lt;documentRef&gt;</span
+> while the autonomous document itself is placed outside the<span
+style="color: #0000FF;"
+> &lt;collectionBody</span
+><span
+style="color: #00009F;"
+>&gt; </span
+>element within the &lt;components&gt; block</p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+>logical component(s) are referenced in the <span
+style="color: #0000FF;"
+>&lt;collectionBody&gt;</span
+> using the element <span
+style="color: #0000FF;"
+>&lt;documentRef&gt;</span
+> with attribute <span
+style="color: #0000FF;"
+>@href</span
+> that specifies the IRI of the independent document/file, which exists independently of the publication document</p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-weight: bold;"
+>documentCollection</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><img
+alt="???"
+height="169"
+src="index_files/image4.png"
+width="105"
+/></p
+></td
+><td
+class="tc-TableNormal"
+style="border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-weight: bold;"
+>documentCollection</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><img
+alt="???"
+height="167"
+src="index_files/image5.png"
+width="101"
+/></p
+></td
+><td
+class="tc-TableNormal"
+style="padding-bottom: 5pt; padding-left: 5pt; padding-right: 5pt; padding-top: 5pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-weight: bold;"
+>documentCollection</span
+><span
+><img
+alt="???"
+height="248"
+src="index_files/image6.png"
+width="118"
+/></span
+></p
+></td
+></tr
+></thead
+><tbody
+></tbody
+></table
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-size: 8pt;"
+>(Images from the official documentation in LegalDocMl OASIS)</span
+></p
+><p
+class="p-Normal"
+>It is possible to have some descriptive or introductory sentences between each autonomous document by using the <span
+style="color: #0000FF;"
+>&lt;interstitial&gt;</span
+> element which may contain text elements and blocks to be placed for any reason between individual documents, for example, <span
+style="color: #0000FF;"
+>&lt;num&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;heading&gt;</span
+> or <span
+style="color: #0000FF;"
+>&lt;subheading&gt;</span
+> elements that may be used to qualify arbitrary text between components. The collection also supports attachments via the <span
+style="color: #0000FF;"
+>&lt;attachments&gt; </span
+>element.</p
+><p
+class="p-Heading4"
+id="__PAGE19__"
+>Portion</p
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>The AKN </span
+><span
+style="color: #0000FF;"
+>&lt;portion&gt;</span
+> <span
+style="color: #000000;"
+>document type does not really correspond to any actual publication. It is not a logical document that a reader may identify.  It is used in exceptional cases for technical reasons. For example, </span
+>some legal documents may become very large, too large to be easily manageable and <span
+style="color: #1212AE;"
+>&lt;portion&gt; </span
+>is a pure technical split, used to handle very long documents by fragmenting them into “portions” to facilitate legal drafting and document management. The &lt;portion&gt; document type may also be use when you use a service that returns specific parts of an AKN document when queried, when subsets of a document are returned they may be returned within a dynamically created portion document.</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 56.7pt; -ms-tab0: left;"
+>It is an implementation decision whether or not to create a <span
+style="color: #0000FF;"
+>&lt;portion&gt;</span
+>, it is not a mark-up one. From the main document the portion is referred to by using the <span
+style="color: #0000FF;"
+>&lt;component&gt;</span
+> element and a <span
+style="color: #0000FF;"
+>&lt;documentRef.&gt;</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: AKN Portion documentType</span
+></p
+><table
+class="t-TableNormal"
+style="table-layout: fixed; width: 100%;"
+><colgroup
+span="1"
+style="width: 76.3pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 114.8pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 295.75pt;"
+></colgroup
+><thead
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+colspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 2.4pt; margin-top: 2.4pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>AKN Document</span
+></p
+></td
+><td
+class="tc-TableNormal"
+rowspan="2"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 2.4pt; margin-top: 2.4pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Description</span
+></p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 2.4pt; margin-top: 2.4pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Structure</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 2.4pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 2.4pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Types</span
+></p
+></td
+></tr
+><tr
+style="page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="line-height: 1.6; margin-bottom: 2.4pt; margin-top: 2.4pt;"
+>Portion</p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="line-height: 1.6; margin-bottom: 2.4pt; margin-left: -12.5pt; margin-right: -5.4pt; margin-top: 2.4pt; text-align: center;"
+><span
+style="color: #1212AE; font-weight: bold;"
+>&lt;portion&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="line-height: 1.6; margin-bottom: 2.4pt; margin-top: 2.4pt;"
+>Used to model a portion of any document as a pure technical split.</p
+></td
+></tr
+></thead
+><tbody
+></tbody
+></table
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="h.xm4wrqqvlyak"
+style="margin-left: 49.65pt;"
+>Document Type Attributes</p
+></div
+><p
+class="p-Normal"
+>Document type elements may be qualified using the following attributes:</p
+><p
+class="p-ListParagraph pn-23-0 n-23-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@name</span
+>: used to qualify a document type with tradition, organization or jurisdiction-specific terms e.g. <span
+style="color: #0000FF;"
+>&lt;act name=”treaty”&gt;</span
+> to specify that the document using the <span
+style="color: #0000FF;"
+>&lt;act&gt;</span
+> element should be referred to as a “treaty”. Please note that <span
+style="color: #0000FF;"
+>&lt;portion&gt;</span
+> document type does not use the <span
+style="color: #0000FF;"
+>@name</span
+> attribute; it uses the <span
+style="color: #0000FF;"
+>@includedIn</span
+> attribute to refer to the master document.</p
+><p
+class="p-ListParagraph pn-24-0 n-24-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@contains</span
+>: used to indicate the status of the version the document represents. It may have the following values: </p
+><p
+class="p-ListParagraph pn-24-1 n-24-1"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>originalVersion</span
+>: when the content of the document is exactly the one that has been formally and explicitly approved by the relevant authority, with no modifications.</p
+><p
+class="p-ListParagraph pn-24-1 n-24-1"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>singleVersion</span
+>: when the content of the document is an editorially modified version of the original document, according to one or more subsequent formal modifications. Individual additions and deletions are not marked in the content. </p
+><p
+class="p-ListParagraph pn-24-1 n-24-1"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>multipleVersions</span
+>: when the content of the document is the juxtaposition of fragments belonging to two or more different versions of the same document. Each fragment is marked as belonging to one or more versions of the document.</p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+>If this attribute is not used, it is assumed to contain the original version. </p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;lifecycle&gt;</span
+> metadata element is required for all <span
+style="color: #0000FF;"
+>singleVersion</span
+> and <span
+style="color: #0000FF;"
+>multipleVersion</span
+> documents, and must be complete. All modifications preceding the document date must be correctly listed and referenced, even if they play no part in the displayed content. <span
+style="color: #0000FF;"
+>originalVersion</span
+> documents need not have the <span
+style="color: #0000FF;"
+>&lt;lifecycle&gt;</span
+> element.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="_Toc465083889"
+style="margin-left: 49.65pt;"
+> Model Document Schema</p
+></div
+><p
+class="p-Normal"
+>In Akoma Ntoso, all document types share the same basic structures and, to a different degree, the same organization of content. With organization of content, we refer here to the visible/explicit structures of a document, its organization in parts and sub-parts that are either in sequence or contained within each other. </p
+><p
+class="p-Normal"
+>Akoma Ntoso supports the basic structures listed in the below. Needless to say that different <span
+style="color: #0000FF;"
+>documentTypes</span
+>, may use different sets of “basic structures”. Only the namespace, the root element <span
+style="color: #0000FF;"
+>&lt;akomaNtoso&gt;</span
+>,<span
+style="color: #0000FF;"
+> &lt;{</span
+><span
+style="color: #000000;"
+>documentType</span
+><span
+style="color: #0000FF;"
+>}&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;meta&gt; </span
+>and <span
+style="color: #0000FF;"
+>&lt;{</span
+><span
+style="color: #000000;"
+>body</span
+><span
+style="color: #0000FF;"
+>}&gt; elements </span
+>MUST be used (in <span
+style="color: #FF0000;"
+>red </span
+>below).</p
+><p
+class="p-Normal"
+style="text-align: left;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9D9D9; margin-left: 40.5pt; margin-right: 40.8pt; text-align: left;"
+><span
+lang="it-IT"
+style="color: #FF0000;"
+>&lt;akomaNtoso xmlns="</span
+><span
+lang="it-IT"
+style="color: #993300;"
+>http://docs.oasis-open.org/legaldocml/ns/akn/3.0/WD17</span
+><span
+lang="it-IT"
+style="color: #FF0000;"
+>"</span
+><span
+class="c-FootnoteReference"
+style="font-size: 9pt;"
+><a
+class="role-footnote-ref"
+href="#__FN15__"
+>15</a
+></span
+><span
+lang="it-IT"
+style="font-size: 9pt;"
+>.</span
+><span
+lang="it-IT"
+style="color: #FF0000;"
+>&gt;</span
+><span
+style="color: #FF0000;"
+><br
+/>      &lt;{</span
+><span
+style="color: #FF0000; font-style: italic;"
+>AKN documentType</span
+><span
+style="color: #FF0000;"
+>}&gt;<br
+/>            &lt;meta&gt;...&lt;/meta&gt;</span
+><span
+style="color: #0000FF;"
+><br
+/></span
+><span
+style="color: #FF0000;"
+>      </span
+><span
+style="color: #0000FF;"
+>      &lt;coverPage&gt;...&lt;/coverPage&gt;<br
+/></span
+><span
+style="color: #FF0000;"
+>      </span
+><span
+style="color: #0000FF;"
+>      &lt;preface&gt;...&lt;/preface&gt; or       &lt;header&gt;...&lt;/header&gt;<br
+/></span
+><span
+style="color: #FF0000;"
+>      </span
+><span
+style="color: #0000FF;"
+>      &lt;preamble&gt;...&lt;/preamble&gt; <br
+/></span
+><span
+style="color: #FF0000;"
+>            &lt;{</span
+><span
+style="color: #FF0000; font-style: italic;"
+>structure specific </span
+><span
+style="color: #FF0000; font-style: italic; font-weight: bold;"
+>body</span
+><span
+style="color: #FF0000; font-style: italic;"
+> element</span
+><span
+style="color: #FF0000;"
+>}&gt;...&lt;/{</span
+><span
+style="color: #FF0000; font-style: italic; font-weight: bold;"
+>body</span
+><span
+style="color: #FF0000; font-style: italic;"
+> element</span
+><span
+style="color: #FF0000;"
+>}&gt;</span
+><span
+style="color: #0000FF;"
+><br
+/></span
+><span
+style="color: #FF0000;"
+>      </span
+><span
+style="color: #0000FF;"
+>      &lt;conclusions&gt;...&lt;/conclusion&gt;<br
+/></span
+><span
+style="color: #FF0000;"
+>      </span
+><span
+style="color: #0000FF;"
+>      &lt;attachments&gt;...&lt;/attachments&gt;<br
+/></span
+><span
+style="color: #FF0000;"
+>      &lt;/{</span
+><span
+style="color: #FF0000; font-style: italic;"
+>AKN document type</span
+><span
+style="color: #FF0000;"
+>}&gt;<br
+/>&lt;/akomaNtoso&gt;</span
+></p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="_Ref479674693"
+style="margin-left: 49.65pt;"
+> Main content: body</p
+></div
+><p
+class="p-Normal"
+>As seen in the model document schema above, the seven document types differ mainly in the way the body, which holds the main content of the document, is structured. In the table below we describe the main characteristics of the structure of the “main content” part of the different document types.</p
+><p
+class="p-Heading4"
+id="__PAGE23__"
+style="text-align: justify;"
+>&lt;body&gt; for documentType  &lt;bill&gt; &lt;act&gt;</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;body&gt; </span
+>element is used for bills and acts and presents an explicit hierarchy of parts, where each part may be identified with a meaningful name (such as section, tome, etc.) and possibly provided with numbers and various types of headings.</p
+><p
+class="p-Normal"
+>Akoma Ntoso provides a large number of names for these parts <span
+style="color: #0000FF;"
+>(&lt;part&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;chapter&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;section&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;paragraph&gt;</span
+>, etc.). Some legislative traditions may use names which may not match the part names specified above – for such use cases a generic container called hcontainer (i.e. hierarchical container) is provided which may be identified with a name and supports the same hierarchical structures provided by the named parts.</p
+><p
+class="p-Heading4"
+id="__PAGE24__"
+style="text-align: justify;"
+>&lt;debateBody&gt; for documentType &lt;debate&gt; </p
+><p
+class="p-Normal"
+>The &lt;debateBody&gt; element contains a hierarchy of subdivisions at the bottom of which may be specified blocks of text or individual utterances of individuals participating in the debate, as well as comments from the drafters.</p
+><p
+class="p-Normal"
+>Subdivisions are explicitly listed (e.g. <span
+style="color: #0000FF;"
+>&lt;administrationOfOath&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;declarationOfVote&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;communication&gt;</span
+>, etc.), plus a generic element <span
+style="color: #0000FF;"
+>&lt;debateSection&gt;</span
+> for all unnamed subdivisions and all those subdivisions whose appropriate name is not listed here.</p
+><p
+class="p-Normal"
+>Within <span
+style="color: #0000FF;"
+>&lt;debateSection&gt;</span
+>, individual text structures may be marked up with <span
+style="color: #0000FF;"
+>&lt;containers&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;speechGroup&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;question&gt; </span
+>and others. Containers that refer to actual utterances (i.e. <span
+style="color: #0000FF;"
+>&lt;speech&gt;</span
+>) have a distinct structure which allows the identification of a speaker using the <span
+style="color: #0000FF;"
+>&lt;from&gt;</span
+> element (which is the name of the speaker as displayed on the print version of the document) plus references to individuals and roles.</p
+><p
+class="p-Heading4"
+id="__PAGE25__"
+style="text-align: justify;"
+>&lt;judgmentBody&gt; for documentType &lt;judgment&gt;</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;judgmentBody&gt; </span
+>element contains sections (e.g. <span
+style="color: #0000FF;"
+>&lt;introduction&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;motivation&gt;</span
+> etc.), that may to be present one or more times as needed.</p
+><p
+class="p-Heading4"
+id="__PAGE26__"
+style="text-align: justify;"
+>&lt;mainBody&gt; for documentType: &lt;statement&gt; &lt;debateReport&gt; and<span
+style="font-weight: normal;"
+> </span
+>&lt;doc&gt;</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;mainBody&gt; </span
+>element of an open structure is a generic collector of all preceding structural elements in any order and number. It is meant for marking up those document types whose structure is too varied, or not well standardized, or with too many exceptions to be worth describing explicitly. It supports the subdivisions provided by &lt;debateBody&gt; (see above).</p
+><p
+class="p-Heading4"
+id="__PAGE27__"
+style="text-align: justify;"
+>&lt;collectionBody&gt; for documentType used in collection structures</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;collectionBody&gt; </span
+>element is used for including multiple documents that maintain their autonomy, but may be managed as a unique container. It is used by the documentTypes <span
+style="color: #0000FF;"
+>&lt;documentCollection&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;officialGazette&gt; </span
+>and <span
+style="color: #0000FF;"
+>&lt;amendmentList&gt;</span
+>.</p
+><p
+class="p-Normal"
+>This structure permits two different approaches:</p
+><p
+class="p-ListParagraph pn-108-0 n-108-0"
+>to include directly in the collectionBody element the other documents (bill, doc, debate, act, etc.);</p
+><p
+class="p-ListParagraph pn-108-0 n-108-0"
+>to include in the collectionBody element references to the documents using the element &lt;documentRef&gt;.</p
+><p
+class="p-Heading4"
+id="__PAGE28__"
+style="text-align: justify;"
+>&lt;amendmentBody&gt; for documentType &lt;amendment&gt;</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;amendmentBody&gt; </span
+>element includes the body of the amendment that is composed of several important parts: amendmentHeading, amendmentContent, amendmentReference, and amendmentJustification.</p
+><p
+class="p-Heading4"
+id="__PAGE29__"
+style="text-align: justify;"
+>&lt;portionBody&gt; for documentType &lt;portion&gt; </p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;portionBody&gt; </span
+>element permits including a portion of any other document.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="h.2p2csry"
+style="margin-left: 49.65pt;"
+> Akoma Ntoso Metadata</p
+></div
+><p
+class="p-Normal"
+>Metadata is composed of information that is not in the original visible content of the document, but has been added to improve the comprehension and classification of the content in the document. </p
+><p
+class="p-Heading4"
+id="__PAGE31__"
+>Metadata Schema</p
+><p
+class="p-Normal"
+>AKN provides the &lt;<span
+style="color: #0000FF;"
+>meta</span
+>&gt; block which is used to contain metadata for the document, and within this, nine different container elements have been provided, each one to describe a different aspect of metadata:</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;identification&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>containing all relevant facts about the document, dates and authors.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;publication&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>publication metadata.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;classification&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>keywords classification.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;lifecycle&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>events that modify the document.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;workflow&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>events that are involved with the legislative, judiciary or parliament process.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;analysis&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>qualifications of the provisions and assertions on the text.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;temporalData&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>temporal parameters (e.g. time intervals of entry into force and enforceability period).</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;references&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>external resources connected with the document, as well as of all individuals, organizations, and concepts that are relevant to understanding the content and the history of the document.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 5.65pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;notes&gt;:</span
+><span
+style="font-weight: bold;"
+> </span
+>annotations inserted by the editor or by the author to explain and detail the text content of the document.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 3pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;proprietary</span
+><span
+style="color: #0000FF; font-weight: bold;"
+>&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>local and proprietary metadata.</p
+><p
+class="p-Normal pn-106-0 n-106-0"
+style="-ms-contextualSpacing: true; hyphens: auto; line-height: 1.55; margin-bottom: 0pt; margin-top: 3pt; orphans: 1; text-indent: -18pt; widows: 1;"
+><span
+style="color: #0000FF;"
+>&lt;presentation&gt;</span
+><span
+style="font-weight: bold;"
+>: </span
+>typographical information useful to support the rendering of the document.</p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3; margin-bottom: 3pt; margin-top: 3pt;"
+>For a detailed analysis of all metadata blocks, please see the <span
+style="font-weight: bold;"
+>AKN4UN Metadata</span
+> section.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE32__"
+style="margin-left: 49.65pt;"
+>Ontology</p
+></div
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>Akoma Ntoso metadata </span
+><span
+style="color: #000000; font-family: Calibri;"
+>relates facts and statements about the document and its content to concepts, things, individuals, and organizations that are mentioned within, but not necessarily stored within, the document being marked up.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>For instance, the identification of a specific individual acting as a “Delegate” in an “Assembly” requires uniquely specifying the “name of the individual”, and also reliably associating the meeting to that specific individual (as opposed to any other individual who might have the same name). This is done using ontologies that allow enriching documents, not just with metadata, but also with information that refers to clear, unambiguous and verifiable concepts.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>In Akoma Ntoso metadata, values are labelled and collected according to a common ontology, i.e. an organized description of the metadata categories that describe the resources. A shared ontology is fundamental to provide a way for managing, organizing and comparing metadata.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>Akoma Ntoso ontology is concerned particularly with records and document management, and covers the core set of data elements needed for the effective management and retrieval of official documents and information. The scope of the ontology is to provide a universal schema for all the information about a document that is available to its owner, does not belong to the document itself, and might be needed for management or searching.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>The format supported by the schema is loose and extensible so that institutions and organizations with different, or more specific metadata needs may add additional elements and qualifiers to meet their own requirements and be easily converted into ontology formats like OWL or RDF. This is a conscious design choice keeping in mind the longer term and the likely evolution of semantic ontology formats in the future. </span
+></p
+><p
+class="p-Normal"
+><span
+style="color: #000000; font-family: Calibri;"
+>The Akoma Ntoso ontology is centred on the concept of document, which is considered in a very precise way through the specification of the</span
+><span
+style="font-family: Calibri;"
+> </span
+>Functional Requirements for Bibliographic Records<span
+class="c-FootnoteReference"
+style="font-family: Calibri;"
+><a
+class="role-footnote-ref"
+href="#__FN16__"
+>16</a
+></span
+><span
+style="font-family: Calibri;"
+> (</span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>FRBR</span
+><span
+style="font-family: Calibri;"
+>) standard of the International Federation of Library Associations (IFLA). </span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>The Akoma Ntoso ontology structure is divided in two main categories:</span
+></p
+><p
+class="p-ListParagraph pn-26-0 n-26-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="font-family: Calibri; font-weight: bold;"
+>document classes: </span
+><span
+style="font-family: Calibri;"
+>focused on all entities that represent the different aspects of a document as intellectual creation, the forms (versions, translations, etc.) that it may take and its physical embodiment (e.g. PDF, XML, HTML, paper, etc.).</span
+></p
+><p
+class="p-ListParagraph pn-26-0 n-26-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="font-family: Calibri; font-weight: bold;"
+>non-document classes: </span
+><span
+style="font-family: Calibri;"
+>focused on two different aspects, namely </span
+><span
+style="font-family: Calibri; font-weight: bold; text-decoration: underline;"
+>who</span
+><span
+style="font-family: Calibri;"
+> is responsible for the production of the content (e.g. organization, person, etc. and </span
+><span
+style="font-family: Calibri; font-weight: bold; text-decoration: underline;"
+>what</span
+><span
+style="font-family: Calibri;"
+> the content is about e.g. concept, object, event, locations, roles, procedures, etc.)</span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>For the </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>document</span
+><span
+style="font-family: Calibri;"
+> </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>classes</span
+><span
+style="font-family: Calibri;"
+>, Akoma Ntoso has defined a set of prescriptive / canonical classes and sub-classes modelled on the FRBR</span
+><span
+class="c-FootnoteReference"
+style="font-family: Calibri;"
+><a
+class="role-footnote-ref"
+href="#__FN17__"
+>17</a
+></span
+><span
+style="font-family: Calibri;"
+> conceptualization of documents.  </span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>For </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>non-document classes </span
+><span
+style="font-family: Calibri;"
+>because of the vast diversity of legal, parliamentary and judicial documents Akoma Ntoso only defines the concept of </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>Top Level Classes</span
+><span
+style="font-family: Calibri;"
+> (TLC). </span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>See in the Table below, the list of both the prescriptive document entity classes and the non-document classes. </span
+></p
+><p
+class="p-Normal"
+style="hyphens: auto; line-height: 1.54; margin-bottom: 8pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-Normal"
+lang="fr-FR"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: Document and Non-Document Classes</span
+></p
+><table
+class="t-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; margin-left: auto; margin-right: auto; width: 73.82%;"
+><colgroup
+span="1"
+style="width: 224.45pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 134.95pt;"
+></colgroup
+><tbody
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Akoma Ntoso Top Level Classes</span
+></p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+rowspan="4"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-weight: bold;"
+>Document Classes</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-weight: bold;"
+>(Canonical)</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Work</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Expression</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Manifestation</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 49.6pt; -ms-tab0: center; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Item</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+rowspan="10"
+style="border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-weight: bold;"
+>Non-Document Classes</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-weight: bold;"
+>(Top Level Classes)</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Person</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Organization</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Concept</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Object</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Event</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Location</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Process</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Term</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Role</p
+></td
+></tr
+><tr
+style="height: 1pt;"
+><td
+class="tc-TableNormal"
+style="padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>Reference</p
+></td
+></tr
+></tbody
+></table
+><p
+class="p-Heading4"
+id="__PAGE33__"
+>Document Classes</p
+><p
+class="p-Normal"
+>Akoma Ntoso adopts the FRBR model because it offers an excellent framework to deal with legal texts, where there are a lot of derivations due to the constant amendments of normative acts, where documents may be translated into different languages or annotated in different ways.</p
+><p
+class="p-Normal"
+>The FRBR model identifies four different levels of abstractions about documents that are clearly differentiated: “<span
+style="font-weight: bold;"
+>works</span
+>”, “<span
+style="font-weight: bold;"
+>expressions</span
+>”, ‘<span
+style="font-weight: bold;"
+>manifestations</span
+>” and “<span
+style="font-weight: bold;"
+>items</span
+>”. These four Top Level classes are typically connected to a document, and are expressed via their elements: <span
+style="color: #0000FF;"
+>&lt;FRBRWork&gt;</span
+>, &lt;<span
+style="color: #0000FF;"
+>FRBRExpression&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;FRBRManifestation&gt;</span
+>, <span
+style="color: #0000FF;"
+>&lt;FRBRItem&gt;</span
+> which are present in the <span
+style="color: #0000FF;"
+>&lt;identification&gt;</span
+> element in the <span
+style="color: #0000FF;"
+>&lt;meta&gt;</span
+> block.</p
+><p
+class="p-Normal"
+>The relationships depicted in the diagram<span
+style="vertical-align: super;"
+><a
+class="role-footnote-ref"
+href="#__FN18__"
+>18</a
+></span
+> below (<a
+class="role-ref-field"
+href="#_Ref474844122"
+>Relationship between Work, Expression, Manifestation &amp; Item</a
+>) indicate that a work (e.g. a Resolution) may be realized through one or more expressions e.g. in English and French (hence the double arrow). </p
+><p
+class="p-Normal"
+><img
+alt="FRBR.jpg"
+height="271"
+src="index_files/image7.jpeg"
+width="462"
+/>An “expression”, on the other hand, is the realization of one and only one “work” (hence the single arrow). i.e. both English and French versions are "expression" of the Resolution "work". </p
+><p
+class="p-Normal"
+>An “expression” may be embodied in one or more than one “manifestation” – i.e. the English and French Resolutions that constitute "expression" may be published in PDF or in XML format – each of which is a “manifestation”.</p
+><p
+class="p-Normal"
+>A “manifestation”, in turn, may be exemplified by one or more items – i.e. a printed copy of a resolution in the library, a PDF copy of the English resolution stored in my computer.</p
+><p
+class="p-Normal"
+style="hyphens: auto; line-height: 1.54; margin-bottom: 8pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: How FRBR classes relate to documents</span
+></p
+><table
+class="t-TableNormal"
+style="border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; margin-left: auto; margin-right: auto; table-layout: fixed; width: 100%;"
+><colgroup
+span="1"
+style="width: 262pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 224.55pt;"
+></colgroup
+><tbody
+><tr
+style="height: 22.95pt;"
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000001; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>FRBR Class</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>Legal Document</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000001; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>work</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Deals with </span
+><span
+style="color: #FF0000; font-size: 9pt; font-weight: bold;"
+>concept</span
+><span
+style="font-size: 9pt;"
+> : the abstract concept of the legal resource</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>“Treaty on Exploitation of Space” approved in 2000</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000001; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>expression</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Deals with </span
+><span
+style="color: #FF0000; font-size: 9pt; font-weight: bold;"
+>form</span
+><span
+style="font-size: 9pt;"
+>: any version of the “work” whose content is different from others for any reason: language, versions, etc.</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>“Treaty on Exploitation of Space" 2000 in </span
+><span
+style="font-size: 9pt; font-weight: bold;"
+>English</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>“Treaty on Exploitation of Space" as amended in </span
+><span
+style="color: #000000; font-size: 9pt;"
+>2006 </span
+><span
+style="color: #000000; font-size: 9pt; font-weight: bold;"
+>in Spanish;</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000001; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>manifestation</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Deals with </span
+><span
+style="color: #FF0000; font-size: 9pt; font-weight: bold;"
+>format</span
+><span
+style="font-size: 9pt;"
+>: any electronic or physical format of the “expression” (MS Word, Open Office, XML, TIFF, PDF, etc.}</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000001; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Treaty_Space_2006.</span
+><span
+style="font-size: 9pt; font-weight: bold;"
+>pdf</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Treaty_ Space_2009</span
+><span
+style="font-size: 9pt; font-weight: bold;"
+>.xml</span
+></p
+></td
+></tr
+><tr
+style="height: 14pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-right-color: #000001; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>Item</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt;"
+>Deals with </span
+><span
+style="color: #FF0000; font-size: 9pt; font-weight: bold;"
+>location</span
+><span
+style="font-size: 9pt;"
+>: the physical copy of any manifestation in the form of a file stored somewhere.</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; padding-bottom: 0pt; padding-left: 2.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>Treaty_Space_2006.pdf</span
+><span
+style="font-size: 9pt;"
+> in your PC</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 1pt; margin-top: 1pt; text-align: center;"
+><span
+style="font-size: 9pt; font-weight: bold;"
+>Treaty_Space_2009.xml</span
+><span
+style="font-size: 9pt;"
+> in the library server</span
+></p
+></td
+></tr
+></tbody
+></table
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+>These FRBR level elements are closely related to the way documents are named and identified in Akoma Ntoso. The metadata specified via the document classes is used to compose the identification IRIs which form the basis of the Akoma Ntoso Naming Convention</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE34__"
+>Non-document Classes</p
+><p
+class="p-Normal"
+>Non-document classes are entities that do not describe the document itself (unlike Work, Expression, Manifestation or Item), but instead describe the content of the document via ontologies. </p
+><p
+class="p-Normal"
+>The ontological structure is based on a concept called Top Level Class (TLC). This ontological structure does not impose any particular rules, unlike that of the document classes.  There is no predefined ontology, nor is there a defined relationship between these classes.  The only thing implied are a set of guidelines to allow modellers and drafters of documents to develop their own ontology according to their needs.  </p
+><p
+class="p-Normal"
+>Akoma Ntoso provides ten different TLCs to identify the different entities present in a document.  Even though these TLCs are labelled with names, and imply a particular IRI structure – the name does not imply a formal semantic. Akoma Ntoso does not define ontology classes for any TLC label, only a naming convention based on IRIs is suggested to express that particular class. The implication is that the actual ontology itself is defined separately in an appropriate language or form, and the TLC IRIs are just mapped to them. </p
+><p
+class="p-Normal"
+>This design aspect of Akoma Ntoso ontology structures allows a great deal of flexibility in what may be expressed within the metadata of Akoma Ntoso documents. By leaving it up to the drafter or modeller to associate clear and formal semantics to each class using any formal ontology representation, it allows the Akoma Ntoso documents themselves to be readable and understandable well into the future as formal ontology descriptions and forms will likely evolve and change over time.</p
+><p
+class="p-Normal"
+>Below you may find a brief description of Akoma Ntoso TLCs for non-document entities used to provide further meaning to the non-document classes of the ontology. </p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: TLC Non Document Classes</span
+></p
+><table
+class="t-TableNormal"
+style="border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; margin-left: auto; margin-right: auto; table-layout: fixed; width: 90%;"
+><colgroup
+span="1"
+style="width: 94.35pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 344.25pt;"
+></colgroup
+><tbody
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCPerson&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify persons mentioned in a document. </p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCOrganizations&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify organizations or groups of individuals that are used or referred in a document. </p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCConcept&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify abstract notions or ideas present in a document. </p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCObject&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify material things mentioned in a document.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCEvent&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify actions or occurrences mentioned in a document. </p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCLocation&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify places mentioned in a document. </p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCProcess&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify processes, series of actions or steps taken in a document or mentioned by a document in order to achieve a particular end.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCRole&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify roles, functions assumed by a person or thing in a particular situation mentioned in a document.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCTerm&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to identify terms or phrases used to describe a thing or to express a concept in a document.</p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: #C5E0B3; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt; text-align: left;"
+><span
+style="color: #0000FF;"
+>&lt;TLCReference&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+>Used to associate references to Ontological Classes or External IRIs.</p
+></td
+></tr
+></tbody
+></table
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+>Each of these elements use the following attributes:</p
+><p
+class="p-ListParagraph pn-27-0 n-27-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@eId </span
+>(<span
+style="color: #FF0000;"
+>required</span
+>): used to identify the TLC element uniquely within the document. This identifier is used to connect the content to the ontology class. </p
+><p
+class="p-ListParagraph pn-27-0 n-27-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@href </span
+>(<span
+style="color: #FF0000;"
+>required</span
+>): used to uniquely identify the entity using an Ontology IRI. Note that these are almost always conceptual IRIs (except sometimes in the case of TLCReference where they may be actual URLs) which have a pure identification function.</p
+><p
+class="p-ListParagraph pn-27-0 n-27-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@showAs </span
+>(<span
+style="color: #FF0000;"
+>required</span
+>): to be used for descriptive name of the entity in the ontology to appear as a label in listings or in other display forms.</p
+><p
+class="p-ListParagraph pn-27-0 n-27-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF;"
+>@shortForm </span
+>(optional): to be used to provide a shorter alternative name for the entity in the ontology.</p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of all non-document classes please see the <span
+style="font-weight: bold;"
+>AKN4UN Naming Convention</span
+> section.</p
+><div
+class="role-box"
+style="background-color: #FFD966; border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; counter-reset: n-124-2 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 4pt; padding-left: 4pt; padding-right: 4pt; padding-top: 4pt;"
+><p
+class="p-Heading2 n-124-1 pb--first pb--last"
+id="_Ref480278845"
+style="margin-left: 28.8pt;"
+>Akoma Ntoso Naming Convention</p
+></div
+><p
+class="p-Normal"
+>Official documents, resolutions, treaties, conventions, etc. contain numerous references to other official documents, people, organizations, concepts, places, events, etc. These documents and the items they refer to may reside on different computers and systems, and even on entirely different networks. The AKN4UN naming convention based on the Akoma Ntoso Naming Convention is a standard mechanism for creating identifiers of documents that may be used to access content and related metadata regardless of storage options and architecture.</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 248.85pt; -ms-tab0: left; page-break-after: avoid; text-align: center;"
+><img
+alt="???"
+height="191"
+src="index_files/image8.png"
+width="343"
+/></p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 248.85pt; -ms-tab0: left; text-align: center;"
+><span
+style="font-weight: bold;"
+>Figure: UN Document, with storage dependency (I: drive and path) in naming and identification</span
+></p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 248.85pt; -ms-tab0: left;"
+>Electronic documents are typically stored on networked computers, and accessed by specifying their network addresses. However, these addresses are extremely dependent on the specificities of the architecture that were adopted by the owner of those documents, and are dependent on the technologies and tools used by the owner. </p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 248.85pt; -ms-tab0: left;"
+>Since UN documents have legal and historical value, it is important that they are not dependent, and not named according to the physical address of the document in the form and medium that is currently used to access it (see <a
+class="role-ref-field"
+href="#_Ref476307375"
+>Figure above</a
+>). The long term availability of these documents needs to be guaranteed.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE36__"
+style="margin-left: 49.65pt;"
+>Benefits</p
+></div
+><p
+class="p-Normal"
+>Akoma Ntoso specifies a naming convention which, in combination with the AKN schema for documents, may be used to identify, reference and access not only the document, but its internal structural parts, and its logical components. Specific portions of a document may also be addressed in a similar manner.</p
+><p
+class="p-Normal"
+>The AKN naming convention is independent of the network address for all the structures represented using it. Akoma Ntoso uses <span
+style="color: #000000;"
+>Internationalized Resource Identifiers</span
+><span
+class="c-FootnoteReference"
+style="color: #1155CC; text-decoration: underline;"
+><a
+class="role-footnote-ref"
+href="#__FN19__"
+>19</a
+></span
+> (IRI) in its naming convention, which provide a clear differentiation between how we name the document, and the identifiers that physically represent the document being requested. IRIs are also the standard mechanisms for referring to documents, languages and concepts on the internet.</p
+><p
+class="p-Normal"
+>Unlike standard internet URLs, which are only about referencing other documents or items on the internet, the AKN naming convention when used with the AKN schema provides a much broader functionality. </p
+><p
+class="p-Normal"
+>The AKN naming convention:</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+><span
+style="font-weight: bold;"
+>Allows naming not just the document, but also all the constituent parts of a document</span
+>– If you think of a typical UN document, it is made up of parts that the user may clearly identify and name – the cover page, the preface, the preamble, the sections with numbers and headings, the content within the sections (e.g. numbered paragraphs with headings), and so on. There may also be annexes and attachments as part of a document (components). The naming convention allows identifying and naming <span
+style="text-decoration: underline;"
+>each and every constituent part</span
+> of a document. It is also aware of the structural hierarchy of a document, so just by examining the identifier you may exactly know where the part being referenced is in the document.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+><span
+style="font-weight: bold;"
+>Provides names that convey meaning</span
+> – Unlike internet URLs, which do not convey any specific meaning, other than what the creator of the URL had in mind, AKN IRIs convey a very clear and distinct meaning about the type of document, its place of origin, its date of origin, its author, the specific part of the document being referenced and so on, in a structured and predictable manner.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+><span
+style="font-weight: bold;"
+>Allows ways to include a document or a part of document within another document</span
+> – Typically UN documents are used in different contexts, they may be placed inside other publications, or perhaps as an annex to a report. The AKN naming convention allows referencing other documents within a document such that the content of the referenced document becomes part of the referencing document. This greatly reduces duplication of documents.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="_Toc409028137"
+style="margin-left: 49.65pt;"
+>Internationalized Resource Identifiers (IRIs)</p
+></div
+><p
+class="p-Normal"
+>The AKN naming convention has been modelled on the following principles:</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+><span
+style="font-weight: bold;"
+>meaningfulness</span
+>: the name is a meaningful and logical description of the resource and not of its physical path.</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+><span
+style="font-weight: bold;"
+>permanence</span
+>: the name must be permanent and stable over time.</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+><span
+style="font-weight: bold;"
+>invariance</span
+>: the name must derive from unchanging properties of the resource so as to provide some degree of certainty in obtaining the same name for the same resource regardless of process, tool and person.</p
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>Akoma Ntoso uses </span
+><a
+href="https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier"
+><span
+class="c-Hyperlink"
+>Internationalized Resource Identifiers</span
+></a
+><span
+style="color: #000000;"
+> (IRIs) as standard mechanisms for referring to documents, languages and concepts on the World Wide Web. A good IRI also has an identification purpose, i.e. it provides a way to universally refer to that resource in a manner that does not change with time, computer systems or software versions. Akoma Ntoso gives a lot of importance to IRIs, and provides rules to systematically specify IRIs for all documents, concepts of the ontology, and even for the markup language itself.</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE38__"
+>Absolute and relative IRIs</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>References at all levels are divided into</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000; font-style: italic; font-weight: bold;"
+>absolute</span
+><span
+style="color: #000000; font-style: italic;"
+> IRI</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000;"
+>and</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000; font-style: italic; font-weight: bold;"
+>relative</span
+><span
+style="color: #000000; font-style: italic;"
+> IRI references</span
+><span
+style="color: #000000;"
+>.  The Akoma Ntoso IRIs belong to the http:// scheme and are expected to be normally resolved using mechanisms widely available in browsers and web servers. Within documents, IRIs are used as references to addressable resources, and are thus called </span
+><span
+style="color: #000000; font-style: italic;"
+>IRI references</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>An </span
+><span
+style="color: #000000; font-weight: bold;"
+>absolute IRI</span
+><span
+style="color: #000000;"
+> starts with the string “http://”, which is then followed by an officially registered domain name, and the local part that starts off the first individual “/” character. A </span
+><span
+style="color: #000000; font-weight: bold;"
+>relative reference</span
+><span
+style="color: #000000;"
+> (which is how references are used in AKN documents), on the other hand, has no indication of the scheme, no indication of the domain name, and may have further missing parts at the beginning of the whole string (no missing parts on the end, though). This makes all IRIs independent of the actual resolution mechanism, and allows for very flexible storage, access, and reference mechanisms. This means that all resolution mechanisms used to access an Akoma Ntoso document from another Akoma Ntoso document will rely on the same resolution mechanism as the original one, regardless of the resolution mechanism employed to generate the documents themselves.</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE39__"
+>Global and local IRIs</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Yet another distinction within relative IRI references is between </span
+><span
+style="color: #000000; font-style: italic; font-weight: bold;"
+>global</span
+><span
+style="color: #000000;"
+> and </span
+><span
+style="color: #000000; font-weight: bold;"
+>local</span
+><span
+style="color: #000000;"
+> IRI references. A global IRI reference is a relative IRI reference where all parts are present except for protocol and authority (i.e. domain name). Thus, a global IRI reference </span
+><span
+style="color: #000000; font-style: italic;"
+>always</span
+><span
+style="color: #000000;"
+> starts with a slash, to indicate that </span
+><span
+style="color: #000000; font-style: italic;"
+>all</span
+><span
+style="color: #000000;"
+> other parts are explicitly specified. A local IRI reference, on the other hand, may have one or more parts missing (necessarily from left to right), and the corresponding global (and, subsequently, absolute) IRI reference is determined by adding the corresponding parts taken from the base document, as usual with relative IRI references with missing parts.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>In XML manifestations of Akoma Ntoso documents, all Work, Expression, and Manifestation-level references to whole documents must be </span
+><span
+style="color: #000000; font-style: italic;"
+>global</span
+><span
+style="color: #000000;"
+>, and all references to individual components within the same level (or lower levels) must be </span
+><span
+style="color: #000000; font-style: italic;"
+>local</span
+><span
+style="color: #000000;"
+> and are stored simply as the name of the corresponding component.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The Akoma Ntoso naming convention:</span
+></p
+><p
+class="p-ListParagraph pn-30-0 n-30-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Does not assume that the document is stored in Akoma Ntoso XML, but only that there is a mapping between the FRBR IRI reference and the URL of a file stored somewhere on the Internet, and to which our reference may be resolved into.</span
+></p
+><p
+class="p-ListParagraph pn-30-0 n-30-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Does not rely on the existence of a single storage architecture, since the IRIs stored within documents are differentiated from the ones physically representing the resource being sought. The mapping from architecture-independent IRIs into accessible architecture-dependent URLs (representing the best Item for the document being sought) is realized through specific applications called </span
+><span
+style="color: #000000; font-style: italic;"
+>IRI resolvers</span
+><span
+style="color: #000000;"
+>. For more information see below the “How to Resolve IRIs” section.</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE40__"
+>Document IRIs</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>All resources are identified by a unique name in Akoma Ntoso. Resources are categorized as Work, Expression, Manifestation and Item, and each of these categories has a different naming structure as well as a number of referenceable concepts that are used in many situations in the lifecycle of legal documents. </span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The most important concepts of the Akoma Ntoso ontology are related to documents. All discourses and all descriptions of legal sources may be characterized as referring to one of the four levels of a document as introduced by IFLA </span
+>Functional Requirements for Bibliographic Records<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN20__"
+>20</a
+></span
+> (FRBR)<span
+style="color: #000000;"
+>:</span
+></p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>Work </span
+><span
+style="color: #000000;"
+>– the abstract concept of the legal resource (e.g. “Clean and Safe Water Treaty” 3</span
+><span
+style="color: #000000; vertical-align: super;"
+>rd</span
+><span
+style="color: #000000;"
+> Oct of 2015).</span
+></p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>Expression </span
+><span
+style="color: #000000;"
+>- any version of the Work whose content is specified and different from others for any reason: language, versions, etc. (e.g. “Clean and Safe Water Treaty” as in the version following the amendments entered into force on July 3</span
+><span
+style="color: #000000; vertical-align: super;"
+>rd</span
+><span
+style="color: #000000;"
+>, 2016).</span
+></p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>Manifestation </span
+><span
+style="color: #000000;"
+>- any electronic or physical format of the Expression: MS Word, Open Office, XML, TIFF, PDF, etc. (e.g. PDF representation of “Clean and Safe Water Treaty” as in the version following the amendments entered into force on July 3</span
+><span
+style="color: #000000; vertical-align: super;"
+>rd</span
+><span
+style="color: #000000;"
+>, 2016).</span
+></p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>Item </span
+><span
+style="color: #000000;"
+>– the physical copy of any Manifestation in the form of a file stored somewhere in some computer on the network or disconnected (e.g. the file called ClearnWater2015.pdf on your computer containing a PDF representation of “Clean and Safe Water Treaty” as in the version following the amendments entered into force on July 3</span
+><span
+style="color: #000000; vertical-align: super;"
+>rd</span
+><span
+style="color: #000000;"
+>, 2016).</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>All documents at all levels may be composed of sub-elements that, when combined, form the whole document. These are called components and abstractly represent the notion that several independent</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000; font-style: italic;"
+>subdocuments</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000;"
+>form the whole document as it appears to the reader (i.e. a main body possibly followed by a number of attachments such as schedules and tables):</span
+></p
+><p
+class="p-ListBullet pn-32-0 n-32-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>WorkComponents </span
+><span
+style="color: #000000;"
+>(e.g. main, schedule, annexes, table) - The WorkComponents are abstract entities that may be referenced to refer to different ExpressionComponents in time.</span
+></p
+><p
+class="p-ListBullet pn-32-0 n-32-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>ExpressionComponent </span
+><span
+style="color: #000000;"
+>(e.g. main, schedule, annexes, or table.) - The ExpressionComponents represent the visible division of the document as generated by the content author (e.g. Parliament) for a specific Expression of the Work.</span
+></p
+><p
+class="p-ListBullet pn-32-0 n-32-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>ManifestationComponent </span
+><span
+style="color: #000000;"
+>(e.g. xml files, PDF files, or TIFF images.) - The ManifestationComponents represent the division of the document as generated by the Manifestation author (e.g. the XML editor) for a specific Manifestation of a specific Expression.</span
+></p
+><p
+class="p-ListBullet pn-32-0 n-32-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>ItemComponent </span
+><span
+style="color: #000000;"
+>- The actual files corresponding to the ManifestationComponents.</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE41__"
+>Non-Document IRI</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Akoma Ntoso defines the concept of Top Level Classes (TLC), also modelled on the FRBR ontology that includes but they are not limited to: Person, Organization, Concept, Object, Event, Process, Role, Term and Location. AKN allows other classes to created and does not have other constraint on how the TLC classes may be subclassed provided that each instance has an ID string that is guaranteed to be unique within the TLC.</span
+></p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE42__"
+style="margin-left: 49.65pt;"
+>IRI Identifiers for Documents</p
+></div
+><p
+class="p-Normal"
+>As we have seen, the FRBR model is used in Akoma Ntoso for both the naming convention and the conceptual structure of identification of documents (work, expression and manifestation). </p
+><p
+class="p-Heading4"
+id="__PAGE43__"
+>Work IRI</p
+><p
+class="role-tabs-36-0 p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The IRI for the Work consists of the following pieces, separated by forward slashes “/”:<span
+class="role-tab"
+> </span
+></span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; counter-reset: n-13-0 -1; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+class="c-HtmlTt"
+style="color: #0000FF; font-weight: bold;"
+>/akn</span
+><span
+class="c-HtmlTt"
+style="color: #000000;"
+>: </span
+><span
+style="color: #000000;"
+>prefix to allow the identification of the IRI as belonging to the Akoma Ntoso Naming Convention (</span
+><span
+style="color: #FF0000;"
+>required</span
+><span
+style="color: #000000;"
+>).</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Jurisdiction/country</span
+><span
+style="color: #000000;"
+>: (a two-letter or code according to ISO 3166-1</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000;"
+>or a short and unique alphanumeric code according to ISO 3166-2</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+style="color: #000000;"
+>) </span
+><span
+style="color: #FF0000;"
+>(required)</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Document type:</span
+><span
+style="color: #FF0000;"
+> (required)</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Document subtype:</span
+><span
+style="color: #000000;"
+> (if appropriate)</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Emanating actor/author: </span
+><span
+style="color: #000000;"
+>(optional).</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Document date:</span
+><span
+style="color: #000000;"
+> when the document was originally created </span
+><span
+style="color: #FF0000;"
+>(required)</span
+><span
+style="color: #000000;"
+>.</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Disambiguating feature</span
+><span
+style="color: #000000; font-style: italic; font-weight: bold;"
+>: </span
+><span
+style="color: #000000;"
+>number or title of the Work, when appropriate, otherwise optionally the string</span
+><span
+class="c-apple-converted-space"
+style="color: #000000;"
+> </span
+><span
+class="c-macchinadascriverehtml1"
+style="color: #000000;"
+>nn. </span
+><span
+style="color: #000000;"
+>(if appropriate).</span
+></p
+><p
+class="p-ListBullet2 pn-13-0 n-13-0"
+style="-ms-tab0-pos: -3.85pt; -ms-tab0: left; margin-bottom: 4pt; margin-left: 36pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-weight: bold;"
+>Component and fragment:</span
+><span
+style="color: #000000;"
+> specifications (if any).</span
+></p
+><p
+class="p-Normal"
+>Please note that the IRI is case sensitive, please see an example below (items required in <span
+style="color: #FF0000;"
+>red</span
+>): </p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+>/<span
+style="color: #FF0000;"
+>akn</span
+>/{<span
+style="color: #FF0000;"
+>jurisdiction</span
+>}/{<span
+style="color: #FF0000;"
+>docType</span
+><span
+style="color: #000000;"
+>}/{subType}/{actor}</span
+>/{<span
+style="color: #FF0000;"
+>docDate}/{docNumber}</span
+></p
+><p
+class="p-Normal"
+lang="fr-FR"
+style="margin-left: 36pt;"
+><span
+style="color: #993300;"
+>e.g.  -- </span
+><span
+style="color: #0000FF;"
+>/akn/un/collection/publication/un-ga/2012-01-13/A-RES-66-1</span
+></p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+>United Nations General Assembly publication A/RES/66/1 of 13<span
+style="vertical-align: super;"
+>th</span
+> January 2012</p
+><p
+class="p-Normal"
+style="hyphens: auto; line-height: 1.54; margin-bottom: 8pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-weight: bold;"
+></span
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Figure: Work IRI constituents</span
+></p
+><p
+class="p-Normal"
+style="page-break-after: avoid; text-align: center;"
+><img
+alt="???"
+height="99"
+src="index_files/image9.png"
+width="629"
+/></p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of Work IRI, please see the <span
+style="font-weight: bold;"
+>AKN4UN Naming Convention</span
+> relevant section.</p
+><p
+class="p-Heading4"
+id="__PAGE44__"
+>Expression IRI</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The Expression goes beyond the conceptual idea of a document, and describes the specific identification of the features of the content. This includes specifications of the version and the language of the Expression. Different versions of the same Work, or the same version of the same Work expressed in different languages correspond to different Expressions and will have different IRIs.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The IRI for the Expression as a whole consists of the following pieces:</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: 0pt; -ms-tab0: left; counter-reset: n-15-0 -1; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>The IRI of the corresponding Work</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: 0pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>The character “</span
+><span
+style="color: #000000; font-weight: bold;"
+>/</span
+><span
+style="color: #000000;"
+>”(</span
+><span
+style="color: #FF0000;"
+>required</span
+><span
+style="color: #000000;"
+>)</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: 0pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>The </span
+><span
+style="color: #000000; font-weight: bold;"
+>language code</span
+><span
+style="color: #000000;"
+> in which the Expression is drafted (a three-letter code according to ISO 639-2 alpha-3). (</span
+><span
+style="color: #FF0000;"
+>required</span
+><span
+style="color: #000000;"
+>)</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: 0pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>The “</span
+><span
+style="color: #FF0000;"
+>@</span
+><span
+style="color: #000000;"
+>” character (</span
+><span
+style="color: #FF0000;"
+>required</span
+><span
+style="color: #000000;"
+>)</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: -36pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>Zero or more semicolon-separated </span
+><span
+style="color: #000000; font-weight: bold;"
+>version identifiers</span
+><span
+style="color: #000000;"
+>, usually a date or the version number if one exists, or any other disambiguating string that helps identifying the specific version of the document (optional).</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: -36pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>Any content-specification </span
+><span
+style="color: #000000; font-weight: bold;"
+>date</span
+><span
+style="color: #000000;"
+> (as opposed to validity date) (optional).</span
+></p
+><p
+class="p-ListBullet pn-15-0 n-15-0"
+style="-ms-tab0-pos: -36pt; -ms-tab0: left; margin-bottom: 2pt; margin-left: 36pt; margin-top: 2pt;"
+><span
+style="color: #000000;"
+>Any content authoring information to determine the authoriality of the text content (optional). </span
+></p
+><p
+class="p-Normal"
+>Please see an example below (items required in <span
+style="color: #FF0000;"
+>red</span
+>):</p
+><p
+class="p-Normal"
+lang="fr-FR"
+style="margin-left: 36pt;"
+>[<span
+style="color: #FF0000;"
+>work</span
+> IRI]/{<span
+style="color: #FF0000;"
+>lang</span
+>}<span
+style="color: #FF0000;"
+>@</span
+>{<span
+style="color: #FF0000;"
+>date</span
+>}</p
+><p
+class="p-Normal"
+lang="fr-FR"
+style="margin-left: 36pt;"
+>[work IRI = <span
+style="color: #993300;"
+>/akn/un/collection/publication/un-ga/2012-01-13/A-RES-66-1</span
+><span
+style="color: #0000FF;"
+>]</span
+></p
+><p
+class="p-Normal"
+lang="fr-FR"
+style="margin-left: 36pt;"
+><span
+style="color: #0000FF;"
+>[expression part IRI = /eng@2013-12-12]</span
+></p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+>The IRI expression of the whole document is as follows:</p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+><span
+style="color: #0000FF;"
+> </span
+><span
+style="color: #993300;"
+>/akn/un/collection/publication/un-ga/2012-01-13/A-RES-66-1</span
+><span
+style="color: #0000FF;"
+>/eng@2013-12-12 </span
+></p
+><p
+class="p-Normal"
+style="margin-left: 36pt;"
+>United Nations General Assembly publication A/RES/66/1 of 13<span
+style="vertical-align: super;"
+>th</span
+> January 2012, version as of 12 December 2013.</p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of Expression IRI, please see the <span
+style="font-weight: bold;"
+>AKN4UN Naming Convention</span
+> relevant section.</p
+><p
+class="p-Heading4"
+id="__PAGE45__"
+>Manifestation IRI </p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The Manifestation describes the process that generates an electronic document in a specific format. Different Manifestations of the same Expression generated in different data formats will have different IRI references.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The IRI for the Manifestation as a whole consists of the following pieces:</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The IRI of the corresponding Expression as a whole</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The mark-up authoring information (useful to determine the authoritativeness of the mark-up and metadata) (optional).</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Any relevant mark-up-specific date (optional).</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>Any additional mark-up-related annotation (e.g. the existence of multiple versions or of annotations.) (optional)</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The character “.” </span
+><span
+style="color: #FF0000;"
+>(required)</span
+></p
+><p
+class="p-ListBullet pn-33-0 n-33-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>A unique three or four letter extension signifying the data format in which the Manifestation is drafted </span
+><span
+style="color: #FF0000;"
+>(required)</span
+><span
+style="color: #000000;"
+>. For instance, such extension may be “pdf” for PDF, “docx”, “html” or “xml” for an XML Manifestation, or “akn” for the zip package of all documents including XML versions of the main document(s) according to the Akoma Ntoso vocabulary.</span
+></p
+><p
+class="p-Normal"
+>Please see an example below (items required in <span
+style="color: #FF0000;"
+>red</span
+>):</p
+><p
+class="p-ListParagraph pn-104-0 n-104-0"
+>[expression IRI]/<span
+style="color: #FF0000;"
+>.</span
+>{<span
+style="color: #FF0000;"
+>format</span
+>} </p
+><p
+class="p-ListParagraph pn-104-0 n-104-0"
+><span
+style="color: #4F6228;"
+>[manifestation part IRI= /.xml]</span
+></p
+><p
+class="p-Normal"
+>The IRI of the Manifestation of the whole document is as follows:</p
+><p
+class="p-ListParagraph pn-105-0 n-105-0"
+><span
+style="color: #993300;"
+>/akn/un/collection/publication/un-ga/2012-01-13/A-RES-66-1/eng@2013-12-12</span
+><span
+style="color: #0000FF;"
+>/{file name}.xml</span
+></p
+><p
+class="p-Normal"
+>United Nations General Assembly publication A/RES/66/1 of 13<span
+style="vertical-align: super;"
+>th</span
+> January 2012, version as of 12 December 2013 in XML format.</p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of the Manifestation IRI please see the AKN4UN Naming Convention relevant section.</p
+><p
+class="p-Heading4"
+id="__PAGE46__"
+> Structural Components IRI</p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>Referring to destinations within the document is possible by adding to a whole-document reference an additional item pointing to the specific destination. Some documents are made of many components; some are only composed of a main document. Within each component, structured portions may be localised and referred to by means of identifying information. Legal citations often point to a specific part of the abstract document, as in “Article 3 of Clear Air Treaty”.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>In order to explicitly refer to individual components and portions, it is necessary to introduce a naming convention that identifies them, and allows an easy connection between the component and the document it belongs to.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>Components and portions are specified at the end of the IRI for Work-level and Expression-level references, and just before the data format for Manifestation-level references. They are introduced by a special character to separate the parts of the IRI reference identifying the document as a whole from the parts identifying the component and/or portion.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>A Work/Expression-level IRI reference including a component specification consists of the following pieces: </span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>The IRI of the corresponding Work/Expression as a whole</span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>The character “/”</span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>The character “!” and</span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>Either:</span
+></p
+><p
+class="p-ListParagraph pn-34-1 n-34-1"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>The name “main” if the component is the only component or the main component in a hierarchy</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-left: 54pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>or</span
+></p
+><p
+class="p-ListParagraph pn-34-1 n-34-1"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000; font-family: Calibri;"
+>A unique name for the attachment, optionally followed by the number associated to this component in the document.  If this number is provided, it is separated from the name with “_”.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of Components IRI please see the AKN4UN Naming Convention relevant section.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE47__"
+style="margin-left: 49.65pt;"
+>How to Resolve IRIs</p
+></div
+><p
+class="p-Normal"
+>The idea behind using IRIs as identifiers is to make them independent of underlying storage architecture. Many existing document management systems rely on proprietary identifiers to link documents; these linkages are not portable and depend on the existence of the document management system to be able to resolve documents, and moving documents into a new system implies redoing the references between documents into the format expected by the new storage system.  </p
+><p
+class="p-Normal"
+>For example, if you had a document stored in a document management system and published documents via the system, all the instances where you refer to the document would have the proprietary path provided by the document management system on which it was published. If for some reason you migrated to a different document management system, all your existing references would perhaps stop working because they expected a path in the format provided by the previous document management system. </p
+><p
+class="p-Normal"
+>The dependencies for document resolution in these systems may be boiled down to a combination of a specific protocol, a specific service and a proprietary identifier. </p
+><p
+class="p-Normal"
+>So far IRIs have been discussed as identifiers and references. To function as references, IRIs need to be <span
+style="font-style: italic;"
+>resolved,</span
+> that is, to be able to predictably access or retrieve the document. The AKN naming convention aims to deal with this issue by recommending the use of a <span
+style="font-weight: bold;"
+>base authority</span
+> URL to resolve IRIs. In simple terms, the base authority URL is just an HTTP URL prefixed to an IRI.</p
+><p
+class="p-Normal"
+>For example, the below could be a URL to resolve to the main component in Resolution 71/4</p
+><p
+class="p-Normal"
+style="margin-left: -9pt; text-align: center;"
+><img
+alt="???"
+height="58"
+src="index_files/image10.png"
+width="652"
+/></p
+><p
+class="p-Normal"
+style="margin-left: -9pt; text-align: center;"
+><span
+style="font-weight: bold;"
+>Figure: Resolver service and IRI</span
+></p
+><p
+class="p-Normal"
+>The above URL is composed of two parts; the first part (<a
+href="http://resolver.akna4un.org"
+><span
+class="c-Hyperlink"
+>http://resolver.akna4un.org</span
+></a
+>) is the hypothetical resolver service where the resolver service is hosted, while the second part is the AKN Work IRI of the main component.  The resolver service is a combination of a domain and a protocol. </p
+><p
+class="p-Normal"
+>The function of the Resolver service is to take the IRI part of the incoming request, and retrieve the Akoma Ntoso document being requested from either the internal management system or the database or filesystem in which the document is being stored. Akoma Ntoso documents make references to other documents only via IRIs; there is no protocol or service specified, neither is the protocol or service information recorded in AKN documents. Resolving an IRI in a document is not a function of the document, but the function of an external service. </p
+><p
+class="p-Normal"
+>Please note that AKN only <span
+style="text-decoration: underline;"
+>implies</span
+> the use of a resolver mechanism, and does not provide the specification for one. This is because the implementation of the resolver is dependent on the storage architecture on which the Akoma Ntoso documents reside. The transparent IRI addressing mechanism provides portability of references to documents, and insulates the documents from changes to the storage architecture. In this way, even if the storage architecture changes over the years, the references to documents will not break.</p
+><p
+class="p-Normal"
+>A resolver will of course need to be compliant with the Akoma-Ntoso naming convention and exhibit the behaviours of reference resolution as described in the Using IRI References section (see Using IRI References section). Using Akoma-Ntoso effectively in your organization will necessitate having a resolver.</p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Anote"
+><span
+style="font-weight: bold;"
+>NOTE: </span
+>Base Authority URLs and IRIs. It is important to note that Base Authority URLs are never included in IRI references, and must not be included. The base authority URL only specifies a transient service / application that represents an application that resolves an IRI, and because the nature of the service or the address with which it is accessed could change over time, they are not included in the documents as part of the IRI and are meant to be part of the application layer that interacts with AKN documents.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE48__"
+style="margin-left: 49.65pt;"
+>Non-Document IRI</p
+></div
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The non-document entities (e.g. people, organizations, or concepts) are always associated to a Top Level Class (TLC), providing a structure of properties and relationships to other instances of the same and other classes. Classes in the Akoma Ntoso ontology are organized in sub/superclasses. These are useful to give shape and meaning to a domain, and to provide structure to the overall set of instances of a base class (e.g. organizations).</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>In order to maintain meaningfulness, permanence and invariance (which are the main requirements for any naming convention) there is a need to find a reliable naming mechanism for clearly identifying entities that do not depend on the sub/superclass organization except when strictly necessary.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #000000;"
+>The concept of Top Level Classes are guaranteed to be a partition of the overall domain of the Akoma Ntoso standard. TLC of non-document classes include Person, Organization, Concept, Object, Event, Process, Role, Term and Location. The list of TLC may, in the future, include more, as long as they keep on generating a partition (i.e. they are disjoint and cumulatively describe all possible instance of the Akoma Ntoso domain). Members of the TLC classes may be subclassed at will and with no theoretical constraints.</span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #000000;"
+>The only requirement stated by Akoma Ntoso deals with the necessity that any instance of each TLC is provided with an ID string that is guaranteed to be unique within the TLC. The syntax of this ID is dependent on the TLC class.</span
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of non-document classes IRI, please see the <span
+style="font-weight: bold;"
+>AKN4UN Naming Convention</span
+> relevant section.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-124-3 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-124-2 pb--first pb--last"
+id="__PAGE49__"
+style="margin-left: 49.65pt;"
+>Element Identifiers</p
+></div
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>Identifiers allow identifying parts/sections within documents, and also, if necessary, fragments of text. Identifiers are essentially a way to uniquely name and identify parts of a document.</span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>It is important to be able to identify each part within a UN document uniquely so that there may be a robust means of referring to that provision. In general, there are three important ways in which you will need to refer to and track a provision:</span
+></p
+><p
+class="p-ListParagraph pn-5141-0 n-5141-0"
+style="counter-reset: n-5141-0 0; margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="font-family: Calibri;"
+>To be able to track a part of a document throughout its lifecycle, knowing with certainty that you're referring to the same part despite any moves or renumbering that it might experience. In essence, it is necessary to have an </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>immutable</span
+><span
+style="font-family: Calibri;"
+> identification ― a means of identifying a part that will never change.</span
+></p
+><p
+class="p-ListParagraph pn-5141-0 n-5141-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="font-family: Calibri;"
+>To be able to refer to each </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>version</span
+><span
+style="font-family: Calibri;"
+> of a part, since documents change over time, knowing with certainty, that the text you have retrieved is exactly the text as it was when it was referred to.</span
+></p
+><p
+class="p-ListParagraph pn-5141-0 n-5141-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="font-family: Calibri;"
+>To be able to refer to the </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>current</span
+><span
+style="font-family: Calibri;"
+> version of a provision as it changes over time, retrieving the latest text at the time it is accessed.</span
+></p
+><p
+class="p-Normal"
+><span
+style="font-family: Calibri;"
+>Akoma Ntoso provides three identifiers which may be used to address these needs:</span
+></p
+><p
+class="p-ListParagraph pn-5132-0 n-5132-0"
+style="counter-reset: n-5132-0 0; margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@eId </span
+><span
+style="font-family: Calibri;"
+>is the </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>expression</span
+><span
+style="font-family: Calibri;"
+> identifier. It is a user-meaningful token generated using a combination of hierarchical location in the document, document type, and document number as needed to ensure (some degree of) uniqueness. The </span
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@eId </span
+><span
+style="font-family: Calibri;"
+>of a provision may change multiple times throughout the life of the document – it is non-persistent.</span
+></p
+><p
+class="p-ListParagraph pn-5132-0 n-5132-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@wId </span
+><span
+style="font-family: Calibri;"
+>is the optional </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>work</span
+><span
+style="font-family: Calibri;"
+> identifier. It uses the same syntactic convention as the </span
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@eId </span
+><span
+style="font-family: Calibri;"
+>value. It is only assigned a value once the </span
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@eId </span
+><span
+style="font-family: Calibri;"
+>changes, inheriting the original value, and will </span
+><span
+style="font-family: Calibri; text-decoration: underline;"
+>never change</span
+><span
+style="font-family: Calibri;"
+> once assigned – it is persistent.</span
+></p
+><p
+class="p-ListParagraph pn-5132-0 n-5132-0"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@GUID </span
+><span
+style="font-family: Calibri;"
+>is an optional identifier assigned as a </span
+><span
+style="font-family: Calibri; font-style: italic;"
+>globally unique identifier</span
+><span
+style="font-family: Calibri;"
+> (GUID) ― a set of randomly generated alphanumeric values. Note that even though it is called GUID it does not necessarily imply only the use of a conventional GUID</span
+><span
+class="c-FootnoteReference"
+style="font-family: Calibri;"
+><a
+class="role-footnote-ref"
+href="#__FN21__"
+>21</a
+></span
+><span
+style="font-family: Calibri;"
+>. It may be used for setting identification schemes which may be prevalent in your organization, or any legacy identification in use.  Unlike with </span
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@eId </span
+><span
+style="font-family: Calibri;"
+>or </span
+><span
+style="color: #0000FF; font-family: Calibri;"
+>@wId</span
+><span
+style="font-family: Calibri;"
+>, there is no syntax recommended for @GUID. </span
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 3pt; margin-top: 3pt;"
+></p
+><p
+class="p-Normal"
+style="background-color: #D9E2F3;"
+>For a detailed analysis of element identifiers, please see the <span
+style="font-weight: bold;"
+>AKN4UN Naming Convention</span
+> relevant section.</p
+><div
+class="role-footnotes"
+><hr
+class="role-notes-separator"
+/><div
+class="role-footnote"
+id="__FN7__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>7 </span
+><span
+style="font-size: 8pt;"
+> Akoma Ntoso means “linked hearts” in the Akan language of West Africa.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN8__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>8 </span
+> <a
+href="https://www.un.org/development/desa/en/"
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>https://www.un.org/development/desa/en/</span
+></a
+><span
+style="font-size: 8pt;"
+> </span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN9__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>9 </span
+> <a
+href="https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml"
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml</span
+></a
+><span
+style="font-size: 8pt;"
+> </span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN10__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>10 </span
+><span
+style="font-size: 8pt;"
+> Akoma Ntoso is used in the European Parliament, the Italian Parliament, the Uruguay Congress, and the Brazilian government. It is being adopted by the Congress of Chile, and in public institutions in Switzerland and the United Kingdom. The most updated list of use cases can be found here </span
+><a
+href="http://www.akomantoso.org/akoma-ntoso-in-detail/use-cases"
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>http://www.akomantoso.org/akoma-ntoso-in-detail/use-cases</span
+></a
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>.</span
+><span
+style="font-size: 8pt;"
+> </span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN11__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>11 </span
+> <span
+style="font-size: 8pt;"
+>Note that the schema technically allows any element as the root element, however for a semantically valid AKN document, it must have the &lt;akomaNtoso&gt; root element.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN12__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>12 </span
+> <span
+style="font-size: 8pt;"
+>To distinguish the phrase “document type” from how we mean it in the context of Akoma Ntoso, we use the jointed form “documentType” in the documentation.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN13__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>13 </span
+><span
+style="font-size: 9pt;"
+> The &lt;judgment&gt; document type might also prove structuraly suitable to model other type of issuances, such as opinion, which may be further qualified through False or True values in the FRBRPrescriptive element.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN14__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>14 </span
+><span
+style="font-size: 9pt;"
+> The usage of &lt;statement&gt; provides no indication as to the prescriptiveness of a document or lack thereof. This prescriptive-neutral usage supersedes the current OASIS &lt;statement&gt; definition in the “non-normative” section 4.2.1 of the Akoma Ntoso Version 1.0. Part 1: XML Vocabulary.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN15__"
+><p
+class="p-FootnoteText"
+lang="en-US"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>15 </span
+> <span
+style="font-size: 8pt;"
+>Note that this namespace IRI will likely change once the AKN schema is formally released by OASIS. This document reflects the current namespace IRI in use.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN16__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>16 </span
+> <span
+style="font-size: 8pt; font-weight: bold;"
+>FRBR</span
+><span
+style="font-size: 8pt;"
+> standard of the International Federation of Library Associations (IFLA) http://www.ifla.org/publications/functional-requirements-for-bibliographic-records.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN17__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+>17 </p
+></div
+><div
+class="role-footnote"
+id="__FN18__"
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 0pt; margin-top: 0pt;"
+><span
+class="c-FootnoteReference"
+>18 </span
+> <span
+style="font-size: 8pt;"
+>Diagram from Functional Requirements for Bibliographic Records - Final Report</span
+></p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 0pt; margin-top: 0pt;"
+></p
+></div
+><div
+class="role-footnote"
+id="__FN19__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>19 </span
+> <a
+href="http://tools.ietf.org/html/rfc3987"
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>http://tools.ietf.org/html/rfc3987</span
+></a
+><span
+style="font-size: 8pt;"
+> </span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN20__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>20 </span
+><span
+style="font-size: 8pt;"
+> </span
+><a
+href="https://www.loc.gov/cds/downloads/FRBR.PDF"
+><span
+class="c-Hyperlink"
+style="font-size: 8pt;"
+>https://www.loc.gov/cds/downloads/FRBR.PDF</span
+></a
+> </p
+></div
+><div
+class="role-footnote"
+id="__FN21__"
+><p
+class="p-FootnoteText"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+class="c-FootnoteReference"
+>21 </span
+> https://en.wikipedia.org/wiki/Universally_unique_identifier</p
+></div
+></div
+></body
+></html
+>

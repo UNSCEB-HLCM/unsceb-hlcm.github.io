@@ -1,0 +1,3447 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+lang="en-GB"
+xmlns="http://www.w3.org/1999/xhtml"
+><head
+><meta
+content="text/html;charset=UTF-8"
+http-equiv="content-type"
+/><title
+>1 AKN4UN Modelling UN Document Classes</title
+><script
+src="index_files/expand-tabs.js"
+type="text/javascript"
+></script
+><link
+href="index.css"
+rel="stylesheet"
+type="text/css"
+/><style
+type="text/css"
+>
+body {
+    counter-reset: n-26-0 0 n-26-1 0 n-26-2 0 n-27-0 0 n-52-0 0 n-53-0 0 n-60-0 0 n-61-0 0;
+}
+</style
+></head
+><body
+><div
+class="role-box"
+style="background-color: #00FF99; border-bottom-color: #C00000; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #C00000; border-left-style: solid; border-left-width: 1pt; border-right-color: #C00000; border-right-style: solid; border-right-width: 1pt; border-top-color: #C00000; border-top-style: solid; border-top-width: 1pt; counter-reset: n-26-1 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 2pt; padding-left: 7pt; padding-right: 7pt; padding-top: 2pt;"
+><p
+class="p-Heading1 n-26-0 pb--first pb--last"
+id="_Toc483489363"
+style="margin-left: 21.6pt;"
+>AKN4UN Modelling UN Document Classes</p
+></div
+><div
+class="role-box"
+style="background-color: #FFD966; border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; counter-reset: n-26-2 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 4pt; padding-left: 4pt; padding-right: 4pt; padding-top: 4pt;"
+><p
+class="p-Heading2 n-26-1 pb--first pb--last"
+id="_Toc483489364"
+style="margin-left: 28.8pt;"
+>Basic Structures</p
+></div
+><p
+class="p-Normal"
+style="margin-bottom: 2pt; margin-top: 2pt;"
+>In AKN4UN, Document Classes share the same basic structures and, to a different degree, the same organization of content. We have seen that Akoma Ntoso has identified the following basic structures:  <span
+style="color: #0000FF;"
+>&lt;coverPage&gt; &lt;preface&gt; &lt;header&gt; &lt;preamble&gt; &lt;{</span
+><span
+style="color: #000000;"
+>body elements of the different document types</span
+><span
+style="color: #0000FF;"
+>}&gt; &lt;conclusions&gt; &lt;attachments&gt;</span
+>.</p
+><p
+class="p-Normal"
+>AKN4UN Document Classes use different sets of "basic structures". The table below shows the basic structures for each AKN4UN Document Class.  It states which basic structures are "mandatory (M)" or "optional (O)" for AKN4UN.</p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>AKN4UN Document Classes by basic elements. </span
+><span
+style="color: #FF0000; font-weight: bold;"
+>M: Mandatory</span
+><span
+style="font-weight: bold;"
+> / O: optional </span
+></p
+><table
+class="t-TableNormal"
+style="margin-left: auto; margin-right: auto; table-layout: fixed; width: 96.72%;"
+><colgroup
+span="1"
+style="width: 170.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 96.7pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 18.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 18.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 18.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 18.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 18.4pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 87.5pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 17.6pt;"
+></colgroup
+><colgroup
+span="1"
+style="width: 17.6pt;"
+></colgroup
+><thead
+><tr
+style="height: 83.3pt; page-break-inside: avoid;"
+><td
+class="tc-TableNormal"
+style="background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>AKN4UN Doc Class</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>AKN doc type</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;meta&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-style: italic; font-weight: bold;"
+>&lt;coverPage&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;preface&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;header&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;preamble&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>body element</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;conclusions&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="-ms-textDirection: btLr; background-color: #9CC2E5; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: 5.65pt; margin-right: 5.65pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>&lt;attachments&gt;</span
+></p
+></td
+></tr
+></thead
+><tbody
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Normative Documents</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;bill&gt; &lt;act&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;body&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 11.65pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Deliberative Documents</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;statement&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Administrative Issuance </span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;statement&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Meeting Agenda</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;debateReport&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Meeting Reports</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;debateReport&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.35pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Communications</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;doc&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 12.55pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Papers</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;doc&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;mainBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.35pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-contenutotabella"
+style="margin-bottom: 0pt; margin-top: 0pt;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Meeting Records</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;debate&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;debateBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.25pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-left: 4pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Court Decisions</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;judgment&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;judgmentBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.25pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-left: 4pt; margin-top: 0pt; text-align: left;"
+><span
+style="color: #000000; font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Modificatory Instructions</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;amendment&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;amendmentBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.25pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-left: 4pt; margin-top: 0pt; text-align: left;"
+><span
+style="color: #000000; font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Publications: Official Records</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;officialGazette&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;collectionBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.25pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt;"
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-left: 4pt; margin-top: 0pt; text-align: left;"
+><span
+style="color: #000000; font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Publications: List of Amendments</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;amendmentList&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;amendmentList&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+><tr
+style="height: 2.25pt;"
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0.3pt; padding-left: 0.5pt; padding-right: 0.5pt; padding-top: 0.3pt;"
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-left: 4pt; margin-top: 0pt; text-align: left;"
+><span
+style="color: #000000; font-family: Calibri; font-size: 9pt; font-weight: bold;"
+>Publications: Standalone and Compilation</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>&lt;documentCollection&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>M</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: #595959; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-left: -5.4pt; margin-right: -5.1pt; margin-top: 0pt; text-align: center;"
+><span
+style="color: #FF0000; font-family: Calibri; font-size: 9pt;"
+>&lt;collectionBody&gt;</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+><td
+class="tc-TableNormal"
+style="background-color: transparent; border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #000000; border-left-style: solid; border-left-width: 1px; border-right-color: #000000; border-right-style: solid; border-right-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; padding-bottom: 0pt; padding-left: 5.4pt; padding-right: 5.4pt; padding-top: 0pt; vertical-align: middle;"
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: center;"
+><span
+style="font-family: Calibri; font-size: 9pt;"
+>O</span
+></p
+></td
+></tr
+></tbody
+></table
+><p
+class="p-Normal"
+style="hyphens: auto; line-height: 1.54; margin-bottom: 8pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-BodyText"
+><span
+style="font-family: Calibri;"
+>The basic structures are not the only aspect shared among different document types. They also share a number of characteristics:</span
+></p
+><p
+class="p-BodyText pn-28-0 n-28-0"
+><span
+style="font-family: Calibri;"
+>All basic structure elements </span
+>belong to a purely structural content model, no text is allowed directly inside them<span
+style="color: #000000; font-family: Calibri;"
+>, only in other elements within them.</span
+></p
+><p
+class="p-BodyText pn-28-0 n-28-0"
+><span
+style="color: #000000; font-family: Calibri;"
+>The elements </span
+>&lt;<span
+style="color: #0000FF;"
+>coverPage&gt; &lt;preamble&gt; &lt;conclusions&gt; </span
+>largely share the same content model. We recommend using <span
+style="color: #0000FF;"
+>&lt;container&gt; </span
+>elements to group content marked-up using inline or block elements The attribute <span
+style="color: #0000FF;"
+>@name </span
+>is required and may be used to specify the content of the <span
+style="color: #0000FF;"
+>&lt;container name=""&gt; </span
+><span
+style="color: #000000;"
+>or left empty</span
+>.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+>The <span
+style="color: #0000FF;"
+>&lt;{</span
+><span
+style="color: #0000FF; font-style: italic;"
+>main content body</span
+><span
+style="color: #0000FF;"
+>}&gt;</span
+> elements, even if they have a structural complexity that reflects the different document types, share elements that behave according to their model (pattern) across all body types.</p
+><p
+class="p-BodyText"
+>Since, for instance, the characteristics of &lt;preface&gt; are the same across all document types, we will describe all the basic element types, apart from <span
+style="color: #0000FF;"
+>&lt;{</span
+><span
+style="color: #0000FF; font-style: italic;"
+>main content body</span
+><span
+style="color: #0000FF;"
+>}&gt;</span
+> ones,  in this section and refer to it in the different document types in order to avoid duplications.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE3__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;coverPage&gt;</p
+></div
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>The </span
+><span
+style="color: #0000FF;"
+>&lt;coverPage&gt;</span
+> element contains all the textual content of a typical cover (masthead), such as the name of the publisher, serial number, issuing authority, legislature or session number, etc. It may contain one or more <span
+style="color: #0000FF;"
+>&lt;container&gt; </span
+>elements. The attribute <span
+style="color: #0000FF;"
+>@name within &lt;container&gt; </span
+>is required and may be used to specify the content of the <span
+style="color: #0000FF;"
+>&lt;container name=""&gt;, </span
+><span
+style="color: #000000;"
+>e.g. footer, etc, or may be left blank</span
+>.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE4__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;preface&gt;</p
+></div
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+><span
+style="color: #000000;"
+>The </span
+><span
+style="color: #0000FF;"
+>&lt;preface&gt; </span
+>element contains any matter found at the beginning of a document up to where the <span
+style="color: #0000FF;"
+>&lt;preamble&gt; </span
+>or the <span
+style="color: #0000FF;"
+>&lt;{body}&gt; </span
+>begins. It may contain <span
+style="color: #000000;"
+>information identifying the document as it appears visually in printed or online versions</span
+>, e.g. document name, title, number, authors and/or sponsors, and date. It may also contain content that may be considered, in common drafting parlance, a "preface".</p
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>Whenever</span
+> the text contains specific information about the document and its authors, or any other information describing its provenance, these are marked-up using inline elements. The inline elements which may be used, wherever appropriate, are: <span
+style="color: #0000FF;"
+>&lt;docType&gt;, &lt;docTitle&gt;, &lt;docNumber&gt;, &lt;docProponent&gt;, &lt;docIntroducer&gt;, &lt;docDate&gt;, &lt;docPurpose&gt;, &lt;docStage&gt;, &lt;session&gt;, &lt;docCommittee&gt;, &lt;docStatus&gt;.</span
+></p
+><p
+class="p-Normal"
+>If and when there are specific semantic parts that are not covered by the AKN elements, the generic <span
+style="color: #0000FF;"
+>&lt;inline&gt; </span
+>element qualified by the <span
+style="color: #0000FF;"
+>@name </span
+><span
+style="color: #000000;"
+>(required) </span
+>and <span
+style="color: #0000FF;"
+>@refersTo (optional) </span
+>attributes should be used. A list of AKN4UN recommended attributes values is provided in Annex I: AKN4UN Attribute Values.</p
+><p
+class="p-Normal"
+></p
+><div
+class="role-box"
+style="background-color: #FFC000; border-bottom-color: #FF0000; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #FF0000; border-left-style: solid; border-left-width: 1pt; border-right-color: #FF0000; border-right-style: solid; border-right-width: 1pt; border-top-color: #FF0000; border-top-style: solid; border-top-width: 1pt; margin-bottom: 6pt; margin-left: 72pt; margin-right: 72pt; padding-bottom: 8pt; padding-left: 8pt; padding-right: 8pt; padding-top: 8pt;"
+><p
+class="p-ARules n-21-0 pb--first"
+style="margin-left: 18pt;"
+>Akoma Ntoso recommends that the above inline elements starting with "doc" be used preferably only in the preface. Usually, when one of the above elements is used in the preface, its @refersTo attribute will refer to the corresponding metadata described in a Top Level Class (TLC). When the element is used outside of the preface, the element may refer to information that is not included in the metadata of that instance. For those cases the "refersTo" attribute shall point to the related locally defined top-level class entry or  must be left empty.</p
+><p
+class="p-ARules n-21-0 pb--last"
+style="margin-left: 18pt;"
+>The <span
+style="color: #0000FF; font-family: Calibri;"
+>&lt;toc&gt;</span
+><span
+style="color: #0000FF;"
+> </span
+>element may be used only at the place where a static table of content appears in the content and <span
+style="font-weight: bold;"
+>cannot</span
+> be used for the mark-up of the dynamically created table of contents that will be generated by the rendering service. The <span
+style="color: #0000FF;"
+>&lt;placeholder&gt;</span
+> element will be used for the mark-up of the position where the rendering service must display the dynamically created table of contents <span
+style="color: #0000FF; font-family: Calibri;"
+>&lt;toc&gt;</span
+>.</p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Anote"
+><span
+style="color: #000000; font-weight: bold;"
+>NOTE:</span
+><span
+style="color: #000000;"
+> The </span
+><span
+style="color: #0000FF;"
+>&lt;preface&gt;</span
+> does not correspond to the term "preface" (i.e. an introduction typically stating its subject, scope, or aims.) but more generally it contains any matter found at the beginning of a document. This often includes the document name, number, authors or sponsors, and the long and short title, and it may also contain content that may be considered, in common drafting parlance, a "preface".</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE5__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;header&gt; </p
+></div
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>The </span
+><span
+style="color: #0000FF;"
+>&lt;header&gt;</span
+> element  is used only in the <span
+style="color: #0000FF;"
+>&lt;judgment&gt; </span
+>document type, and contains any matter found at the beginning of a court decision, from the very beginning of a document up to where the <span
+style="color: #0000FF;"
+>&lt;judgmentBody&gt; </span
+>begins. It may contain information about the parties, lawyers, judges, judgment, identification number, type of court, jurisdiction, case number, procedure phases, etc.</p
+><p
+class="p-Normal"
+style="line-height: 1.55; margin-top: 5.65pt;"
+>It reports relevant information to identify "<span
+style="font-weight: bold;"
+>documents</span
+>" and "<span
+style="font-weight: bold;"
+>authors</span
+>". Akoma Ntoso has also specific elements of &lt;header&gt;: such us: <span
+style="color: #0000FF;"
+>&lt;courtType&gt;, &lt;neutralCitation&gt;, &lt;party&gt;, &lt;judge&gt;, &lt;docJurisdiction&gt;</span
+> which must be used whenever appropriate.</p
+><p
+class="p-Normal"
+>If and when there are specific semantic parts that are not covered by the AKN elements, the generic <span
+style="color: #0000FF;"
+>&lt;inline&gt; </span
+>element qualified by the <span
+style="color: #0000FF;"
+>@name </span
+>and <span
+style="color: #0000FF;"
+>@refersTo </span
+>attributes should be used. A list of AKN4UN attributes values is provided in Annex I: AKN4UN Attributes Values.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE6__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;preamble&gt;</p
+></div
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>The </span
+><span
+style="color: #0000FF;"
+>&lt;preamble&gt;</span
+> element is used to mark-up the initial part of a document stating its purpose, aim and justification (introduction, motivation, purpose, or legal basis of a document). </p
+><p
+class="p-Normal"
+>This part may consist of one or more different paragraphs, usually not numbered. At times, it might be structured as a single long sentence formatted into multiple paragraphs for readability, in which each of the paragraphs begins with a verb. <span
+style="color: #000000;"
+>The </span
+><span
+style="color: #0000FF;"
+>&lt;preamble&gt;</span
+> element must contain one or more <span
+style="color: #0000FF;"
+>&lt;container&gt; </span
+>elements. The attribute <span
+style="color: #0000FF;"
+>@name </span
+>is required and ay be used to specify the content of the <span
+style="color: #0000FF;"
+>&lt;container name=""&gt; </span
+><span
+style="color: #000000;"
+>e.g. using the action verbs</span
+>.</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+>The <span
+style="color: #0000FF;"
+>&lt;preamble&gt; </span
+>element contains at least one or more <span
+style="color: #0000FF;"
+>&lt;container&gt; </span
+>elements and may include some or all the informational parts below; their order is determined by the natural order of the text as it appears on the document:</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;formula&gt;</span
+> describes the enacting sentences which, in many legal traditions, are regular and fixed linguistic expressions.</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;recitals&gt;</span
+> include motivations and justifications of the legal document, with individual <span
+style="color: #0000FF;"
+>&lt;recital&gt;</span
+> elements within it.</p
+><p
+class="p-ListParagraph pn-29-0 n-29-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;citations&gt;</span
+> include references to other legal documents that are fundamental to the current text: legal basis, preparatory documents as well as normative procedures, with individual <span
+style="color: #0000FF;"
+>&lt;citation&gt;</span
+> elements within it.</p
+><p
+class="p-Normal"
+style="-ms-contextualSpacing: true; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+>The preamble may start with a <span
+style="font-weight: bold;"
+>formula</span
+> containing the authorities that promulgate the document and may end with a promulgation formula. Both should be marked-up with the <span
+style="color: #0000FF;"
+>&lt;formula&gt; </span
+>element, generic element, which requires <span
+style="color: #0000FF;"
+>@name </span
+>attribute (see Annex I) and may be further qualified by the <span
+style="color: #0000FF;"
+>@refersTo</span
+> attribute </p
+><p
+class="p-Normal"
+style="margin-top: 0pt;"
+>Several <span
+style="font-weight: bold;"
+>recitals</span
+> are all grouped within the <span
+style="color: #0000FF;"
+>&lt;recital&gt; </span
+>element. They usually start with an introductory phrase ("Whereas:" in English), which will be marked with the <span
+style="color: #0000FF;"
+>&lt;intro&gt; </span
+>element. Each recital will be marked with the <span
+style="color: #0000FF;"
+>&lt;recital&gt; </span
+>element. If the recitals are numbered, the number must be marked with the <span
+style="color: #0000FF;"
+>&lt;num&gt; </span
+>sub-element.</p
+><p
+class="p-Normal"
+>The <span
+style="font-weight: bold;"
+>citations</span
+> are grouped within the <span
+style="color: #0000FF;"
+>&lt;citations&gt;</span
+> element. Each citation will be marked with the <span
+style="color: #0000FF;"
+>&lt;citation&gt; </span
+>element. The structuring of the citations may also be further qualified using the <span
+style="color: #0000FF;"
+>@refersTo</span
+> attribute of the citation pointing to the related TLC class. </p
+><p
+class="p-Normal"
+><span
+style="color: #000000;"
+>Paragraphs of text in the </span
+><span
+style="color: #0000FF;"
+>&lt;preamble&gt; </span
+><span
+style="color: #000000;"
+>may be marked as</span
+> <span
+style="color: #0000FF;"
+>&lt;p&gt; </span
+>elements, and the text within the paragraphs may be marked up with inline elements if required. If you wish to group a series of paragraphs, you will have to use a <span
+style="color: #0000FF;"
+>&lt;container&gt;</span
+> element to contain them.</p
+><p
+class="p-Normal"
+>Below we have an example XML skeleton of &lt;preamble&gt;.</p
+><p
+class="p-Normal"
+><span
+style="color: #993300;"
+>""""</span
+></p
+><div
+class="role-box"
+style="background-color: #CCFFCC; border-bottom-color: #0000FF; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #0000FF; border-left-style: solid; border-left-width: 1pt; border-right-color: #0000FF; border-right-style: solid; border-right-width: 1pt; border-top-color: #0000FF; border-top-style: solid; border-top-width: 1pt; margin-bottom: 0pt; margin-left: 36pt; margin-right: 36pt; padding-bottom: 8pt; padding-left: 8pt; padding-right: 8pt; padding-top: 8pt;"
+><p
+class="p-Acode pb--first"
+lang="en-US"
+><span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>preamble</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>    <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>formula</span
+><span
+style="color: #FF0000;"
+> name</span
+><span
+style="color: #0000FF;"
+>=""&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>    <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>formula</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>    <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>citations</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>citation</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>        <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>citation</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>citation</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="fr-FR"
+>        <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>citation</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>    <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>citations</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>    <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>recitals</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>intro</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+>Whereas:<span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>        <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>intro</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>recital</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>num</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+>(1)<span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>num</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>        <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>recital</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>recital</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>num</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+>(2)<span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>num</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="it-IT"
+>            <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>        <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>recital</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>    <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>recitals</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>    <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>formula</span
+><span
+style="color: #FF0000;"
+> name</span
+><span
+style="color: #0000FF;"
+>=""&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>        <span
+style="color: #0000FF;"
+>&lt;</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+> <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>p</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+>      <span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>formula</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--last"
+lang="en-US"
+><span
+style="color: #0000FF;"
+>&lt;/</span
+><span
+style="color: #800000;"
+>preamble</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><div
+class="role-box"
+style="background-color: #FFC000; border-bottom-color: #FF0000; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #FF0000; border-left-style: solid; border-left-width: 1pt; border-right-color: #FF0000; border-right-style: solid; border-right-width: 1pt; border-top-color: #FF0000; border-top-style: solid; border-top-width: 1pt; margin-bottom: 6pt; margin-left: 72pt; margin-right: 72pt; padding-bottom: 8pt; padding-left: 8pt; padding-right: 8pt; padding-top: 8pt;"
+><p
+class="p-ARules n-21-0 pb--first pb--last"
+style="margin-left: 18pt;"
+>We strongly recommend using &lt;container&gt; as the generic holder of other content. The @name attribute may be used to give the grouping semantic context.</p
+></div
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE7__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;{main content body}&gt;</p
+></div
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+>The <span
+style="color: #0000FF;"
+>&lt;{</span
+><span
+style="color: #0000FF; font-style: italic;"
+>main content body</span
+><span
+style="color: #0000FF;"
+>}&gt;</span
+> elements are the parts where document types differ the most and where the structural complexity of the different document types is reflected. There are six different body elements, corresponding to the six document structures:</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;body&gt; </span
+>― This is the most common element and it models the hierarchical structure.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;debateBody&gt;</span
+> ― This element contains the structures necessary to record a debate. It does not support hierarchical structures, and it is the only "body" not to explicitly allow hierarchical structures.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;judgmentBody&gt;</span
+> ― This element contains the hierarchical structures necessary to describe a judge's opinion or ruling.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;mainBody&gt;</span
+> ― This element contains a general set of structures which may be used in a variety of ways.</p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;amendmentBody&gt;</span
+> ― This element contains the structures needed to describe a single change.<span
+style="color: #0000FF;"
+> </span
+></p
+><p
+class="p-ListParagraph pn-28-0 n-28-0"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+><span
+style="color: #0000FF;"
+>&lt;collectionBody&gt;</span
+> ― This element allows a collection of documents to be composed. The documents may either be embedded or included by reference.</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+>These elements will be described in all AKN4UN Document Classes because, even if they may be shared in different documentTypes, each of them has specific features.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE8__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;conclusions&gt;</p
+></div
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;conclusions&gt;</span
+> element contains all concluding matters of a document, e.g. dates, place, witnessing clause, parties and signatures.  Structurally, <span
+style="color: #0000FF;"
+>&lt;conclusions&gt; </span
+>follows the model of the <span
+style="color: #0000FF;"
+>&lt;preamble&gt;.</span
+> It must contain one or more <span
+style="color: #0000FF;"
+>&lt;container&gt; </span
+>elements. The attribute <span
+style="color: #0000FF;"
+>@name </span
+>is required and may be used to specify the content of the <span
+style="color: #0000FF;"
+>&lt;container name=""&gt;</span
+>.</p
+><p
+class="p-Normal"
+>The <span
+style="color: #0000FF;"
+>&lt;conclusions&gt;</span
+> may also record the outcome of an event, for example the text describing an adoption and a vote at the end of a meeting is marked up as follows: </p
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+></p
+><div
+class="role-box"
+style="background-color: #CCFFCC; border-bottom-color: #0000FF; border-bottom-style: solid; border-bottom-width: 1pt; border-left-color: #0000FF; border-left-style: solid; border-left-width: 1pt; border-right-color: #0000FF; border-right-style: solid; border-right-width: 1pt; border-top-color: #0000FF; border-top-style: solid; border-top-width: 1pt; margin-bottom: 0pt; margin-left: 36pt; margin-right: 36pt; padding-bottom: 8pt; padding-left: 8pt; padding-right: 8pt; padding-top: 8pt;"
+><p
+class="p-Acode pb--first"
+lang="en-US"
+><span
+style="color: #000000;"
+>&lt;conclusions&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #0000FF;"
+>   &lt;</span
+>container<span
+style="color: #FF0000;"
+> name</span
+><span
+style="color: #0000FF;"
+>=""&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>    </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>p<span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>     </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>vote<span
+style="color: #FF0000;"
+> by</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#securityCouncil</span
+><span
+style="color: #0000FF;"
+>"</span
+><span
+style="color: #FF0000;"
+> as</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#author</span
+><span
+style="color: #0000FF;"
+>"</span
+><span
+style="color: #FF0000;"
+> choice</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#majorityMembers</span
+><span
+style="color: #0000FF;"
+>"&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>      </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>outcome<span
+style="color: #FF0000;"
+> refersTo</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#adopted</span
+><span
+style="color: #0000FF;"
+>"&gt;</span
+><span
+style="color: #000000;"
+> Adopted </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>outcome<span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>     </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>vote<span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>     </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>event<span
+style="color: #FF0000;"
+> refersTo</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#meeting1747</span
+><span
+style="color: #0000FF;"
+>"&gt;</span
+><span
+style="color: #000000;"
+> at the 1747th meeting </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>event<span
+style="color: #0000FF;"
+>&gt;</span
+><span
+style="color: #000000;"
+> </span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>    by </span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>    </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>quantity<span
+style="color: #FF0000;"
+> refersTo</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#resolutionForVotes</span
+><span
+style="color: #0000FF;"
+>"&gt;</span
+><span
+style="color: #000000;"
+> 14 </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>quantity<span
+style="color: #0000FF;"
+>&gt;</span
+><span
+style="color: #000000;"
+> </span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>    votes to </span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>    </span
+><span
+style="color: #0000FF;"
+>&lt;</span
+>quantity<span
+style="color: #FF0000;"
+> refersTo</span
+><span
+style="color: #0000FF;"
+>="</span
+><span
+style="color: #000000;"
+>#resolutionAgainstVotes</span
+><span
+style="color: #0000FF;"
+>"&gt;</span
+><span
+style="color: #000000;"
+> none </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>quantity<span
+style="color: #0000FF;"
+>&gt;</span
+><span
+style="color: #000000;"
+>. </span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #0000FF;"
+>    &lt;/</span
+>p<span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--middle"
+lang="en-US"
+><span
+style="color: #000000;"
+>   </span
+><span
+style="color: #0000FF;"
+>&lt;/</span
+>container<span
+style="color: #0000FF;"
+>&gt;</span
+></p
+><p
+class="p-Acode pb--last"
+lang="en-US"
+><span
+style="color: #0000FF;"
+>&lt;/conclusions&gt;</span
+></p
+></div
+><p
+class="p-Normal"
+style="hyphens: auto; margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-Anote"
+>Concluding sections called "conclusions" (e.g. in reports) are not a conclusion in the sense of Akoma Ntoso</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE9__"
+lang="en-US"
+style="margin-left: 36pt;"
+>&lt;attachments&gt;</p
+></div
+><p
+class="p-BodyText"
+>The <span
+style="color: #0000FF; font-family: Calibri; font-size: 9pt;"
+>&lt;attachments&gt;</span
+> element may either contain or reference another document, typically an annex, appendix, or report, which is attached to the main document, but not treated as part of the content of the main document.</p
+><p
+class="p-BodyText"
+>There are two distinct cases for modelling <span
+style="color: #0000FF;"
+>&lt;attachments&gt;</span
+> to a document.</p
+><p
+class="p-BodyText"
+>If the attachment is an autonomous document, i.e. having a distinct identity from the current document, then the attachment uses its distinct IRI. The attachment document itself may be completely embedded within <span
+style="color: #0000FF;"
+>&lt;attachment&gt;</span
+> or referenced using <span
+style="color: #0000FF;"
+>&lt;documentRef&gt; </span
+>by the distinct IRI of that document. In such cases, the <span
+style="color: #0000FF;"
+>&lt;num&gt;</span
+> or <span
+style="color: #0000FF;"
+>&lt;heading&gt; </span
+>tag is required if there is no title in the annex/attachment itself. <span
+style="color: #0000FF;"
+>@showAs</span
+> should contain the title of the annex in all cases. </p
+><p
+class="p-BodyText"
+>For non-autonomous documents, which do not have a distinct identity independent of the current document, the attachment is identified using a component IRI of the main document. Like the earlier case, the document may be expanded fully within &lt;attachment&gt; or referenced using the component IRI of the main document.</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+>In the below example, the attachment is autonomous and has a distinct identity from the main document and so it contains references to the components of documents that are marked as separate AKN4UN instances:</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left;"
+></p
+><p
+class="p-Acode"
+>&lt;attachments&gt;<br
+/>    &lt;attachment&gt;<br
+/>        &lt;heading&gt;Annex&lt;/heading&gt;<br
+/>        &lt;documentRef href="/akn/un/..." showAs="Annex 1"/&gt;<br
+/>    &lt;/attachment&gt;<br
+/>&lt;/attachments&gt;</p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+></p
+><p
+class="p-Normal"
+style="-ms-tab0-pos: 36pt; -ms-tab0: left; margin-bottom: 4pt; margin-top: 4pt;"
+>In the below example, the attachment is a component of the main document, and it is not an autonomous document. The attachment component uses the IRI of the main document. </p
+><p
+class="p-Acode"
+><span
+style="color: #0000FF;"
+>&lt;akomaNtoso&gt;</span
+><br
+/>    <span
+style="color: #0000FF;"
+>&lt;act</span
+><span
+style="color: #F5844C;"
+> name</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"resolution"</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/>        <span
+style="color: #0000FF;"
+>&lt;meta&gt;</span
+><br
+/>            <span
+style="color: #0000FF;"
+>&lt;identification</span
+><span
+style="color: #F5844C;"
+> source</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"#un"</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/>                <span
+style="color: #0000FF;"
+>&lt;FRBRWork&gt;</span
+><br
+/>                    <span
+style="color: #0000FF;"
+>&lt;FRBRthis</span
+><span
+style="color: #F5844C;"
+> value</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"{mainDocumentIRI}"</span
+><span
+style="color: #0000FF;"
+>/&gt;</span
+><br
+/>                    ... <br
+/>                <span
+style="color: #0000FF;"
+>&lt;/FRBRWork&gt;</span
+><br
+/>                ... <br
+/>            <span
+style="color: #0000FF;"
+>&lt;/identification&gt;</span
+><br
+/>            ... <br
+/>        <span
+style="color: #0000FF;"
+>&lt;/meta&gt;</span
+><br
+/>        <span
+style="color: #0000FF;"
+>&lt;body&gt;</span
+> ... <span
+style="color: #0000FF;"
+>&lt;/body&gt;</span
+><br
+/>        <span
+style="color: #0000FF;"
+>&lt;attachments&gt;</span
+><br
+/>            <span
+style="color: #0000FF;"
+>&lt;attachment</span
+><span
+style="color: #F5844C;"
+> eId</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"comp_1"</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/>                <span
+style="color: #0000FF;"
+>&lt;doc</span
+><span
+style="color: #F5844C;"
+> name</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"annex"</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/>                    <span
+style="color: #0000FF;"
+>&lt;meta&gt;</span
+><br
+/>                        <span
+style="color: #0000FF;"
+>&lt;identification</span
+><span
+style="color: #F5844C;"
+> source</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"#un"</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/>                            <span
+style="color: #0000FF;"
+>&lt;FRBRWork&gt;</span
+><br
+/>                                <span
+style="color: #0000FF;"
+>&lt;FRBRthis</span
+><span
+style="color: #F5844C;"
+> value</span
+><span
+style="color: #FF8040;"
+>=</span
+><span
+style="color: #993300;"
+>"{mainDocumentIRI}!annex_1"</span
+><span
+style="color: #0000FF;"
+>/&gt;</span
+> <br
+/>                                ... <br
+/>                            <span
+style="color: #0000FF;"
+>&lt;/FRBRWork&gt;</span
+> <br
+/>                            ....<br
+/>                        <span
+style="color: #0000FF;"
+>&lt;/identification&gt;</span
+><br
+/>                    <span
+style="color: #0000FF;"
+>&lt;/meta&gt;</span
+><br
+/>                <span
+style="color: #0000FF;"
+>&lt;/doc&gt;</span
+><br
+/>            <span
+style="color: #0000FF;"
+>&lt;/attachment&gt;</span
+><br
+/>        <span
+style="color: #0000FF;"
+>&lt;/attachment</span
+><span
+style="color: #F5844C;"
+>s</span
+><span
+style="color: #0000FF;"
+>&gt;</span
+><br
+/><span
+style="color: #993300;"
+>""""</span
+>    <span
+style="color: #0000FF;"
+>&lt;/act&gt;</span
+><br
+/><span
+style="color: #0000FF;"
+>&lt;/akomaNtoso&gt;</span
+></p
+><div
+class="role-box"
+style="background-color: #FFD966; border-bottom-color: #404040; border-bottom-style: solid; border-bottom-width: 0.75pt; border-left-color: #404040; border-left-style: solid; border-left-width: 0.75pt; border-right-color: #404040; border-right-style: solid; border-right-width: 0.75pt; border-top-color: #404040; border-top-style: solid; border-top-width: 0.75pt; counter-reset: n-26-2 0; margin-bottom: 12pt; margin-left: 0pt; margin-right: 0pt; padding-bottom: 4pt; padding-left: 4pt; padding-right: 4pt; padding-top: 4pt;"
+><p
+class="p-Heading2 n-26-1 pb--first pb--last"
+id="_Toc483489365"
+style="margin-left: 28.8pt;"
+>AKN4UN: Modelling of UN Document Classes</p
+></div
+><p
+class="p-Normal"
+>Before we proceed with the <span
+class="c-normaltextrun"
+>AKN4UN modelling of UN Document Classes in Akoma Ntoso,</span
+> it is useful to recall that UN Document Classes represent <span
+style="font-weight: bold;"
+>abstract typologies</span
+> of documents. They are not designed to represent any specific type of document of an organization. They are tailored to represent different typologies of documents across their complete lifecycle by identifying commonalities and patterns in function and structure. The UN Document Classes are designed to represent:</p
+><p
+class="p-HtmlNormal pn-30-0 n-30-0"
+><span
+style="font-family: Calibri; font-weight: bold;"
+>Core features of </span
+><span
+style="font-family: Calibri;"
+>UN document types. They are meant to describe classes of documents that, to a large degree, have the same function, play the same legal role and have the same content structure across UN organizations.</span
+></p
+><p
+class="p-HtmlNormal pn-30-0 n-30-0"
+><span
+style="font-family: Calibri; font-weight: bold;"
+>Whole lifecycles</span
+><span
+style="font-family: Calibri;"
+> of documents, from when they were drafted until when its workflow has been completed in all its forms and not just a specific state.</span
+></p
+><p
+class="p-Normal"
+>AKN4UN Document Classes makes also the very important distinction between:</p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+>"<span
+style="font-weight: bold;"
+>Document</span
+>" as it appears to the readers in whatever medium it may be, whether on paper, electronic format, web page, etc<span
+class="c-normaltextrun"
+>.</span
+></p
+><p
+class="p-ListParagraph pn-31-0 n-31-0"
+>"<span
+style="font-weight: bold;"
+>Logical Component</span
+>": any logically and functionally distinct component of a "document".</p
+><p
+class="p-Normal"
+>The modelling of "documents" as made up of the different components is a very critical feature of AKN4UN because it is what enables an effective reuse of logical components both during the lifecycle of a document and across documents and applications.</p
+><div
+class="role-box"
+style="border-bottom-color: #000000; border-bottom-style: solid; border-bottom-width: 1px; border-top-color: #000000; border-top-style: solid; border-top-width: 1px; counter-reset: n-26-3 0; margin-bottom: 12pt; margin-left: 18pt; margin-right: 0pt; padding-bottom: 1pt; padding-top: 1pt;"
+><p
+class="p-Heading3 n-26-2 pb--first pb--last"
+id="__PAGE11__"
+lang="en-US"
+style="margin-left: 36pt;"
+>Modelling of AKN4UN Document Classes</p
+></div
+><p
+class="p-HtmlNormal"
+><span
+style="font-family: Calibri;"
+>AKN4UN modelling of the UN Document Classes provides a </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>non-exhaustive</span
+><span
+style="font-family: Calibri;"
+> </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>list</span
+><span
+style="font-family: Calibri;"
+> </span
+><span
+style="font-family: Calibri; font-weight: bold;"
+>of elements</span
+><span
+style="font-family: Calibri;"
+> that a specific document typology may have across all organizations and across all the possible stages of its lifecycle. </span
+></p
+><p
+class="p-HtmlNormal"
+><span
+style="font-family: Calibri;"
+>It will be up to the individual organization, during the implementation of the standard, to select the most appropriate elements to model their specific documents according to their own specific requirements.</span
+></p
+><p
+class="p-HtmlNormal"
+><span
+style="font-family: Calibri;"
+>For example, the modelling of "Deliberative Documents Class" (e.g. resolutions) is not focused on a specific resolution of a specific organization, instead, we strived to use examples from normative documents of different members of the Working Group. </span
+></p
+><p
+class="p-HtmlNormal"
+><span
+style="font-family: Calibri;"
+>The aim was to show the variability and the cases that were more complex since from them it will be easy to build the simpler ones. For instance, the "Deliberative Documents Class" will describe all the characteristics that deliberative documents may have across all the UN organizations, with the objective of covering all the variances that may exist.</span
+></p
+><p
+class="p-Normal"
+>If we take e.g. "resolutions", we will have the model of what we call the "logical component" (core resolution) in the "Deliberative Documents Class" and the model of the "documents/publications" in which a resolution may appear (dealt with by the "Document Class Publications"). To visually clarify what constitutes the "publication" and what the "logical component" the image below shows the publication of a resolution and the relationship between the logical resolution and the publication container.</p
+><p
+class="p-Normal"
+id="_Toc480751902"
+style="text-align: center;"
+><span
+style="font-weight: bold;"
+>Table: Resolution Publication</span
+></p
+><p
+class="p-Normal"
+style="text-align: center;"
+><img
+alt="???"
+height="548"
+src="index_files/image4.png"
+width="552"
+/></p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+><span
+class="c-normaltextrun"
+>UN documents are currently digitally rendered in essentially two forms:</span
+></p
+><p
+class="p-ListParagraph pn-32-0 n-32-0"
+><span
+class="c-normaltextrun"
+style="font-weight: bold;"
+>e-Paper documents:</span
+><span
+class="c-normaltextrun"
+> these documents reproduce all the traditional formatting features of UN paper publications and documents. Currently, this is the case of PDF documents designed precisely to be electronic versions of paper documents that keeps all the formatting of the paper publications.</span
+></p
+><p
+class="p-ListParagraph pn-33-0 n-33-0"
+><span
+class="c-normaltextrun"
+style="font-weight: bold;"
+>Web-documents</span
+><span
+class="c-normaltextrun"
+>: these documents focus on what we may call the "core content" and leave out all the "publication features" e.g. cover page/masthead, headers, footers, etc. Currently this is the case of web documents (HTML), that in most cases drop all the "publication" overhead to just focus on content and presentation of the core content.</span
+></p
+><p
+class="p-Normal"
+><span
+class="c-normaltextrun"
+>Taking the example of the resolution publication, it may be modelled using:</span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+><span
+class="c-normaltextrun"
+>AKN4UN </span
+><span
+style="color: #0000FF;"
+>&lt;documentCollection name="publication"&gt; </span
+><span
+class="c-normaltextrun"
+>for the publication content (masthead info, publication titles etc. headers, footers etc.); document collection that will contain an …</span
+></p
+><p
+class="p-ListParagraph pn-34-0 n-34-0"
+><span
+class="c-normaltextrun"
+>AKN4UN </span
+><span
+style="color: #0000FF;"
+>&lt;statement name="resolution"&gt;</span
+><span
+class="c-normaltextrun"
+> for the actual core content of the resolution.</span
+></p
+><p
+class="p-Normal"
+>In this way, using both the "collection-publication" and "statement-resolution", it is possible to easily reproduce both "e-paper-document" and publish directly in on the Web. To publish the same resolution as web document, only the <span
+class="c-normaltextrun"
+>AKN4UN </span
+><span
+style="color: #0000FF;"
+>&lt;statement name="resolution"&gt;</span
+><span
+class="c-normaltextrun"
+> with the actual core content of the resolution</span
+> will be used. If there will be need to also show the data of the publication, e.g. document identifier e.g. A/RES/70/1 those data will be retrieved by the publication instance.</p
+><p
+class="p-Normal"
+></p
+><div
+class="role-box"
+style="background-color: #99CCFF; border-bottom-color: #002060; border-bottom-style: solid; border-bottom-width: 1px; border-left-color: #002060; border-left-style: solid; border-left-width: 1px; border-right-color: #002060; border-right-style: solid; border-right-width: 1px; border-top-color: #002060; border-top-style: solid; border-top-width: 1px; margin-bottom: 6pt; margin-left: 90pt; margin-right: 72pt; padding-bottom: 8pt; padding-left: 8pt; padding-right: 8pt; padding-top: 8pt;"
+><p
+class="p-Anote pb--first"
+style="margin-left: 0pt;"
+><span
+style="font-weight: bold;"
+>NOTE:</span
+></p
+><p
+class="p-Anote pn-28-2 n-28-2 pb--middle"
+style="margin-left: 18pt;"
+>The AKN4UN Document Classes are meant to model the "logical components" of UN "physical documents".</p
+><p
+class="p-Anote pn-28-2 n-28-2 pb--middle"
+style="margin-left: 18pt;"
+>Most UN documents/publications will actually be modelled by more than one AKN4UN Document Classes.</p
+><p
+class="p-Anote pn-28-2 n-28-2 pb--middle"
+style="margin-left: 18pt;"
+>In the following examples, the <span
+style="font-weight: bold;"
+>focus is on the structural mark-up </span
+>of AKN4UN document classes. If we would have added to the examples below, a full semantic mark-up, the code would have been unreadable, defeating the purpose of showcasing how the document structures and subdivisions may be handled.</p
+><p
+class="p-Anote pn-28-2 n-28-2 pb--last"
+style="margin-left: 18pt;"
+>The basic structure <span
+style="color: #0000FF;"
+>&lt;coverPage&gt; </span
+>will not be dealt with in each Document Class, only in modelling of the "Publication Document Class" because of the AKN4UN choice of focusing on "logical documents". In UN documents, most of the times "cover pages/mastheads" are part of the "Publication Document Class" which contains the document (which is in turn based on the Document Class). If there is a need to model <span
+style="color: #0000FF;"
+>&lt;coverPage&gt; </span
+>within the other Document Classes, please refer to the "Publication Document Class".</p
+></div
+><p
+class="p-Normal"
+></p
+></body
+></html
+>
