@@ -1,0 +1,453 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+lang="en-GB"
+xmlns="http://www.w3.org/1999/xhtml"
+><head
+><meta
+content="text/html;charset=UTF-8"
+http-equiv="content-type"
+/><title
+>Annex 2: Methods and Material</title
+><link
+href="index.css"
+rel="stylesheet"
+type="text/css"
+/><style
+type="text/css"
+>
+body {
+    counter-reset: n-4-0 0;
+}
+</style
+></head
+><body
+><p
+class="p-Heading1"
+id="_Annex_2__Methods"
+lang="en-US"
+>Annex 2: Methods and Material</p
+><p
+class="p-Normal"
+lang="en-US"
+>In this section we illustrate all the methods and material that have supported the development of UNDO.</p
+><p
+class="p-Heading2"
+id="__PAGE20__"
+lang="en-US"
+>Simplified Agile Methodology for Ontology Development</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Simplified Agile Methodology for Ontology Development (<a
+href="https://github.com/essepuntato/samod"
+><span
+class="c-Hyperlink"
+>SAMOD</span
+></a
+>) is a novel agile methodology for the development of ontologies, partially inspired by the Test-Driven Development process in Software Engineering and by existing agile ontology development methodologies, such as eXtreme Design (XD). SAMOD is organised in three simple steps within an iterative process that focuses on creating well-developed and documented models. It uses exemplars of data, so as to produce ontologies that are always ready-to-be-used and easily-understandable by humans (i.e. the possible customers) without spending a lot of effort. It has been used to develop UNDO since the beginning. </p
+><p
+class="p-Normal"
+style="page-break-after: avoid;"
+><img
+alt="???"
+height="339"
+src="index_files/samod.png"
+width="643"
+/></p
+><p
+class="p-Caption"
+>Figure 2 A summary of the three steps of SAMOD.</p
+><p
+class="p-Normal"
+lang="en-US"
+>Each step of the methodology, summarized in <a
+class="role-ref-field"
+href="#_Ref354960526"
+><span
+lang="en-GB"
+>Figure 2</span
+></a
+>, ends with the release of a snapshot of the current state of the process called milestone, and involves one or more ontology engineers, the experts in semantic technologies and ontology development tools and languages, or OEs, and some experts of the particular domain to be modelled, in the following way:</p
+><p
+class="p-ListParagraph pn-4-0 n-4-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>The ontology engineer, with the help of domain experts, collects all the information about a specific domain, and builds a small monolithic model, called <span
+style="font-style: italic;"
+>modelet</span
+>, formalizing the domain in consideration, following specific ontology development principles. Finally, a new <span
+style="font-style: italic;"
+>test case</span
+> is created – i.e. a set of resources that includes the modelet, some <span
+style="font-style: italic;"
+>exemplar data</span
+> and <span
+style="font-style: italic;"
+>query</span
+> to be answered, that must be appropriately tested by means of formal tools, such as reasoners. If everything works fine, a milestone is released and the process continues, otherwise the ontology engineers have to go back to the previous milestone;</p
+><p
+class="p-ListParagraph pn-4-0 n-4-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>The ontology engineer merges the modelet of the new test case with the <span
+style="font-style: italic;"
+>current model</span
+> produced by the end of the last iteration of the process, and consequently updates and checks all the test cases developed in the past so as to include the new current model. If everything works fine, a milestone is released and the process continues, otherwise the ontology engineer has to go back to the previous milestone;</p
+><p
+class="p-ListParagraph pn-4-0 n-4-0"
+lang="en-US"
+>The ontology engineer refactors the current model, in particular focusing on the last part added in the previous step, taking into account <span
+style="font-style: italic;"
+>good practices</span
+> for ontology development processes. If everything works fine, a milestone is released, otherwise the ontology engineer has to go back to the previous released milestone. Thus, in case there is another motivating scenario to be addressed, then the process is iterated, otherwise it stops.</p
+><p
+class="p-Heading2"
+id="__PAGE21__"
+lang="en-US"
+>Live OWL Documentation Environment</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Live OWL Documentation Environment (<a
+href="http://www.essepuntato.it/lode"
+><span
+class="c-Hyperlink"
+>LODE</span
+></a
+>) is a service that automatically extracts classes, object properties, data properties, named individuals, annotation properties, general axioms and namespace declarations from an OWL and OWL2 ontology, and renders them as ordered lists, together with their textual definitions, in a human-readable HTML page designed for browsing and navigation by means of embedded links. This LODE service is an open source development, and can be freely used. It may be used in conjunction with content negotiation to display this human-readable version of an OWL ontology when the user accesses the ontology using a web browser, or alternatively to deliver the OWL ontology itself when the user accesses the ontology using an ontology editing tool such as Protégé and NeOn Toolkit.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In the context of the development of UNDO, Graffoo has been used to produce the HTML documentation of the ontology by extrapolating their annotations.</p
+><p
+class="p-Heading2"
+id="__PAGE22__"
+lang="en-US"
+>Graphical Framework For OWL Ontologies</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Graphical Framework for OWL Ontologies (<a
+href="http://www.essepuntato.it/graffoo"
+><span
+class="c-Hyperlink"
+>Graffoo</span
+></a
+>), is an open source tool that can be used to present the classes, properties and restrictions within OWL ontologies, or sub-sections of them, as clear and easy-to-understand diagrams. The advantages of using such a Graffoo diagram are, thus, that it displays the logical relationships between elements of an ontology, or a sub-section of an ontology, in a manner that is relatively straightforward to understand, once one has grasped the meaning of the different elements of a Graffoo diagram. These elements are fully presented in the <a
+href="http://www.essepuntato.it/graffoo/specification/current.html"
+><span
+class="c-Hyperlink"
+>official specification</span
+></a
+>.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In the context of the development of UNDO, it has been used to create the various modelets (see <a
+class="role-ref-field"
+href="#_Ref351541631"
+>Simplified Agile Methodology for Ontology Development</a
+>) and all the diagrams of the ontology.</p
+><p
+class="p-Heading2"
+id="__PAGE23__"
+lang="en-US"
+>Diagrams Transformation into OWL</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Diagrams Transformation inTo OWL (<a
+href="http://www.essepuntato.it/ditto"
+><span
+class="c-Hyperlink"
+>DiTTO</span
+></a
+>) is a Web application that is able to translate diagrams expressed in either E/R crow’s foot notation or Graffoo and created with <a
+href="http://www.yworks.com/en/products_yed_about.html"
+><span
+class="c-Hyperlink"
+>yEd</span
+></a
+> into OWL ontologies. If one chooses to specify E/R diagrams, DiTTO allows one to choose what E/R semantics to apply for the transformation according to three alternative conversion strategies, which depends on the application of two assumptions:</p
+><p
+class="p-ListParagraph pn-5-0 n-5-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>global semantics (GS) is a characteristic of OWL ontologies (but not typically of E/R), and has the effect of unifying the formal interpretation of domain and range axioms, property characteristics, and all the restrictions that act at a global level. When GS does not hold, one is not allowed to assume such unification, even when the axioms regard two constants with the same name;</p
+><p
+class="p-ListParagraph pn-5-0 n-5-0"
+lang="en-US"
+>unique name assumption (UNA), which is a characteristic in E/R semantics (but not of OWL), and whose consequence is that two objects named differently always refer to different entities in the world.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In the context of the development of UNDO, DiTTO has been used to convert the Graffoo diagrams of the modelets into OWL automatically.</p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Heading2"
+id="__PAGE24__"
+lang="en-US"
+>Other related ontologies</p
+><p
+class="p-Normal"
+lang="en-US"
+>For describing a domain concerning documents, and the entities they describe, other ontologies are relevant and deserve to be properly introduced. In the following subsections, we provide a quick introduction of those that have been directly reused in UNDO.</p
+><p
+class="p-Normal"
+lang="en-US"
+style="margin-bottom: 5pt; margin-top: 5pt; text-align: left;"
+>The current version of the ontology imports the following ontologies:</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="color: #4F81BD; font-weight: bold;"
+>A Light Legal Ontology On TLCs</span
+></p
+><p
+class="p-Normal"
+><span
+style="font-size: 11pt;"
+>A Light Legal Ontology On TLCs (</span
+><a
+href="https://w3id.org/akn/ontology/allot"
+><span
+class="c-Hyperlink"
+style="font-size: 11pt;"
+>ALLOT</span
+></a
+><span
+style="font-size: 11pt;"
+>) provides a formal implementation of Akoma Ntoso Top Level Classes (TLCs) in OWL 2 DL, so as to make available a vocabulary for enabling the integration of heterogeneous legal knowledge-bases based on Akoma Ntoso documents;</span
+></p
+><p
+class="p-Heading4"
+id="__PAGE25__"
+lang="en-US"
+>Publishing Workflow Ontology</p
+><p
+class="p-Normal"
+lang="en-US"
+>Time-indexed Value in Context (<a
+href="http://www.essepuntato.it/2012/04/tvc"
+><span
+class="c-Hyperlink"
+>TVC</span
+></a
+>) is an ontology pattern that allows to describe scenarios in which someone (e.g., a person) has a value (e.g., a particular role) during a particular time and for a particular context.</p
+><p
+class="p-Heading4"
+id="__PAGE26__"
+lang="en-US"
+>Time Interval</p
+><p
+class="p-Normal"
+lang="en-US"
+>Time Interval (<a
+href="http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl"
+><span
+class="c-Hyperlink"
+>TI</span
+></a
+>) is an ontology pattern that enables the description of period of times characterised by a starting date and an ending date.</p
+><p
+class="p-Heading4"
+id="__PAGE27__"
+lang="en-US"
+>Web Annotation Ontology</p
+><p
+class="p-Normal"
+lang="en-US"
+><a
+href="https://www.w3.org/ns/oa"
+><span
+class="c-Hyperlink"
+>Web Annotation Ontology</span
+></a
+> is a set of RDF classes, predicates and named entities that are used by the Web Annotation Data Model for creating annotations in RDF.</p
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+>In addition to these ontologies, UNDO is also aligned with entities defined in external ontologies and vocabularies, in particular:</p
+><p
+class="p-Heading4"
+id="__PAGE28__"
+lang="en-US"
+>Dublin Core Metadata Terms</p
+><p
+class="p-Normal"
+lang="en-US"
+>Dublin Core Metadata Terms (<a
+href="http://purl.org/dc/terms/"
+><span
+class="c-Hyperlink"
+>DCTerms</span
+></a
+>) is an ontology implementing all the metadata terms maintained by the Dublin Core Metadata Initiative, including properties, vocabulary encoding schemes, syntax encoding schemes, and classes.</p
+><p
+class="p-Heading4"
+id="__PAGE29__"
+lang="en-US"
+>FaBiO</p
+><p
+class="p-Normal"
+lang="en-US"
+>The FRBR-align Bibliographic Ontology (<a
+href="http://purl.org/spar/fabio"
+><span
+class="c-Hyperlink"
+>FaBiO</span
+></a
+>) is an ontology for recording and publishing on the Semantic Web bibliographic records of scholarly endeavours.</p
+><p
+class="p-Heading4"
+id="__PAGE30__"
+lang="en-US"
+>FOAF</p
+><p
+class="p-Normal"
+lang="en-US"
+>Friend Of A Friend (<a
+href="http://xmlns.com/foaf/0.1/"
+><span
+class="c-Hyperlink"
+>FOAF</span
+></a
+>) is an ontology for describing people and their relations with other people, documents, and other information objects.</p
+><p
+class="p-Heading4"
+id="__PAGE31__"
+lang="en-US"
+>FRBR DL</p
+><p
+class="p-Normal"
+lang="en-US"
+>Functional Requirement for Bibliographic Records DL (<a
+href="http://purl.org/spar/frbr"
+><span
+class="c-Hyperlink"
+>FRBR DL</span
+></a
+>) is an expression in OWL 2 DL of the basic concepts and relations described in the IFLA report on the Functional Requirements for Bibliographic Records (FRBR), also described in Ian Davis's RDF vocabulary.</p
+><p
+class="p-Heading4"
+id="__PAGE32__"
+lang="en-US"
+>ISO 639-1</p
+><p
+class="p-Normal"
+lang="en-US"
+><a
+href="http://id.loc.gov.vocabulary/iso693-1"
+><span
+class="c-Hyperlink"
+>ISO 639-1</span
+></a
+> is a vocabulary describing the first part of the ISO 639 international-standard language-code family.</p
+><p
+class="p-Heading4"
+id="__PAGE33__"
+lang="en-US"
+>LKIF Core</p
+><p
+class="p-Normal"
+lang="en-US"
+>Two different ontologies defined within the framework LKIF Core has been considered: </p
+><p
+class="p-ListParagraph pn-6-0 n-6-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>LKIF Core: <a
+href="http://www.estrellaproject.org/lkif-core/action.owl"
+><span
+class="c-Hyperlink"
+>Action</span
+></a
+> is an ontology for representing actions in general, i.e. processes which are performed by some agent;</p
+><p
+class="p-ListParagraph pn-6-0 n-6-0"
+lang="en-US"
+>LKIF Core: <a
+href="http://www.estrellaproject.org/lkif-core/role.owl"
+><span
+class="c-Hyperlink"
+>Role</span
+></a
+> is an ontology for describing typology of roles (epistemic roles, functions, person roles, organisation roles).</p
+><p
+class="p-Heading4"
+id="__PAGE34__"
+lang="en-US"
+>Publishing Roles Ontology</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Publishing Roles Ontology (<a
+href="http://purl.org/spar/pro"
+><span
+class="c-Hyperlink"
+>PRO</span
+></a
+>) is an ontology describing possible roles in the publication process, or in other scholarly activities or situations, held by particular agent.</p
+><p
+class="p-Heading4"
+id="__PAGE35__"
+lang="en-US"
+>Publishing Status Ontology</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Publishing Status Ontology (<a
+href="http://purl.org/spar/pso"
+><span
+class="c-Hyperlink"
+>PSO</span
+></a
+>) is an ontology for characterizing the publication status of a document or other publication entity at each of the various stages in the publishing process.</p
+><p
+class="p-Heading4"
+id="__PAGE36__"
+lang="en-US"
+>Publishing Workflow Ontology</p
+><p
+class="p-Normal"
+lang="en-US"
+>The Publishing Workflow Ontology (<a
+href="http://purl.org/spar/pwo"
+><span
+class="c-Hyperlink"
+>PWO</span
+></a
+>) is a simple ontology written in OWL 2 DL for the characterization of the main stages in the workflow associated with the publication of a document (e.g. being written, under review, XML capture, page design, publication to the Web).</p
+><p
+class="p-Heading4"
+id="__PAGE37__"
+lang="en-US"
+>Simple Knowledge Organization System </p
+><p
+class="p-Normal"
+lang="en-US"
+>The Simple Knowledge Organization System (<a
+href="https://www.w3.org/TR/skos-reference/"
+><span
+class="c-Hyperlink"
+>SKOS</span
+></a
+>) is a common data model for sharing and linking knowledge organization systems via the Web.</p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+></p
+><p
+class="p-Normal"
+style="margin-bottom: 0pt; margin-top: 0pt; text-align: left;"
+></p
+></body
+></html
+>
