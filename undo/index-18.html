@@ -1,0 +1,4726 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+lang="en-GB"
+xmlns="http://www.w3.org/1999/xhtml"
+><head
+><meta
+content="text/html;charset=UTF-8"
+http-equiv="content-type"
+/><title
+>Annex 1: Examples of scenarios that UNDO can describe</title
+><link
+href="index.css"
+rel="stylesheet"
+type="text/css"
+/><style
+type="text/css"
+>
+body {
+    counter-reset: n-4-0 0;
+}
+</style
+></head
+><body
+><p
+class="p-Heading1"
+id="_Annex_1__Examples"
+lang="en-US"
+>Annex 1: Examples of scenarios that UNDO can describe</p
+><p
+class="p-Normal"
+lang="en-US"
+>UNDO allows one to describe with a formal language (OWL and RDF) several scenarios <span
+lang="en-GB"
+style="color: #000000;"
+>that are typical to the documents published by the United Nations organisations (e.g. UN Resolutions)</span
+>. In the following sections, we illustrate some of them in RDF and we list possible natural language questions related to each scenario and their representations in SPARQL queries.</p
+><p
+class="p-HtmlNormal"
+lang="en-US"
+style="text-align: justify;"
+><span
+style="font-family: Calibri;"
+>All the examples are provided in Turtle format, which is a specific linearization for RDF statements. The prefixes that are used in all the examples introduced in the following sub-sections are defined as follows:</span
+></p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix : &lt;https://w3id.org/akn/data/undo/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix undo: &lt;https://w3id.org/akn/ontology/undo/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix allot: &lt;https://w3id.org/akn/ontology/allot/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix dcterms: &lt;http://purl.org/dc/terms/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix lan: &lt;http://id.loc.gov/vocabulary/iso639-1/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix oa: &lt;http://www.w3.org/ns/oa#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix part: &lt;http://www.ontologydesignpatterns.org/cp/owl/participation.owl#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix pwo: &lt;http://purl.org/spar/pwo/&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix taskex: &lt;http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix tisit: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeindexedsituation.owl#&gt; .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>@prefix tvc: &lt;http://www.essepuntato.it/2012/04/tvc/&gt; .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+>The prefixes that are used in all the SPARQL queries provided below are defined as follows:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX : &lt;https://w3id.org/akn/data/undo/&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX allot: &lt;https://w3id.org/akn/ontology/allot/&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX oa: &lt;http://www.w3.org/ns/oa#&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX owl: &lt;http://www.w3.org/2002/07/owl#&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX undo: &lt;https://w3id.org/akn/ontology/undo/&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX ti: &lt;http://www.ontologydesignpatterns.org/cp/owl/timeinterval.owl#&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX tvc: &lt;http://www.essepuntato.it/2012/04/tvc/&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX frbr: &lt;http://purl.org/vocab/frbr/core#&gt;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX pwo: &lt;http://purl.org/spar/pwo/&gt;</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>PREFIX taskex: &lt;http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#&gt;</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 1</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> In the preface of the UN resolution A/RES/50/100 of 2 February 1996 (http://undocs.org/A/RES/50/100 )  there are references to:</p
+><p
+class="p-ListParagraph pn-2-0 n-2-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the UN resolution A/RES/47/180 of 22 December 1992;</p
+><p
+class="p-ListParagraph pn-2-0 n-2-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the Government of Turkey;</p
+><p
+class="p-ListParagraph pn-2-0 n-2-0"
+lang="en-US"
+>the United Nations Conference on Human Settlements (Habitat II).</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The resolution A/RES/50/100 mentions another resolution (A/RES/47/180),<br
+/># the Government of Turkey, and the conference Habitat II.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-50-100-1996-02-02 a undo:Resolution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    allot:mentions</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :a-res-47-180-1992-12-22 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :government-of-turkey ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :habitat-ii .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-47-180-1992-12-22 a undo:Resolution .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:government-of-turkey a allot:Organization .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:habitat-ii a allot:Event.</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>What are all the documents that refer to the UN resolution A/RES/47/180 of 22 December 1992?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?document</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?document allot:mentions :a-res-47-180-1992-12-22 .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 2</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> According to the content of the UN resolution A/RES/50/100 of 2 February 1996, the General Assembly:</p
+><p
+class="p-ListParagraph pn-20-0 n-20-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>recalls the resolution A/RES/47/180 of 22 December 1992;</p
+><p
+class="p-ListParagraph pn-20-0 n-20-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>reiterates its gratitude to the Government of Turkey;</p
+><p
+class="p-ListParagraph pn-20-0 n-20-0"
+lang="en-US"
+>notes the progress that has been made so far in the preparations for the United Nations Conference on Human Settlements (Habitat II).</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-50-100-1996-02-02 a undo:Resolution .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-47-180-1992-12-22 a undo:Resolution .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:general-assembly a allot:Organization .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:organization a allot:Organization .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:government-of-turkey a allot:Organization .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:habitat-ii a allot:Event .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:recall a allot:Concept .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:reiterate-its-gratitude a allot:Concept .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:note-the-progress a allot:Concept .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># This relation describes the General Assembly recalling the<br
+/># resolution A/RES/47/180.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:relation-1 a undo:Relation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasProponent :general-assembly ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasSemantics :recall ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasReceiver :a-res-47-180-1992-12-22 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># This relation describes the General Assembly reiterating its gratitude <br
+/># to the Government of Turkey.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:relation-2 a undo:Relation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasProponent :general-assembly ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasSemantics :reiterate-its-gratitude ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasReceiver :government-of-turkey .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># This relation describes the General Assembly noting the progress for the <br
+/># preparation of Habitat II.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:relation-3 a undo:Relation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasProponent :general-assembly ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasSemantics :note-the-progress ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasReceiver :habitat-ii .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The following are a three annotations that attached the aforementioned<br
+/># relations to the resolution A/RES/50/100 from which they have been<br
+/># extracted.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-1-a-res-50-100-1996-02-02 a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :relation-1 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-2-a-res-50-100-1996-02-02 a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :relation-2 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-3-a-res-50-100-1996-02-02 a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :relation-3 ;</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02 .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question:</span
+> What are all the entities referred by the UN resolution A/RES/50/100 of 2 February 1996?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?entity ?type</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    :a-res-50-100-1996-02-02 allot:mentions ?entity .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?entity a ?type .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    FILTER (?type != owl:NamedIndividual)</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 3</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> The UN resolution A/RES/50/100 has been published in six different languages. The term "decides" has been used twice in the English version, and, in parallel, the term "decide" has been used twice in the Spanish version. Both the terms actually refer to the same higher-level concept of taking a decision, even if this aspect has not been made formally explicit in the document itself.</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The resolution A/RES/50/100 that has been made available in two different<br
+/># versions according to two languages.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-50-100-1996-02-02 a undo:Resolution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    allot:hasRealization</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :a-res-50-100-1996-02-02-en ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :a-res-50-100-1996-02-02-es .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The English version of the resolution.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-50-100-1996-02-02-en a undo:DocumentVersion ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    dcterms:language lan:en .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The Spanish version of the resolution.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-res-50-100-1996-02-02-es a undo:DocumentVersion ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    dcterms:language lan:es .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The definition of an English term describing the concept of <br
+/># ‘taking a decision’ and two distinct annotation that attach it<br
+/># to the same English version of the resolution – since the term<br
+/># appears twice in the document.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:decides a allot:Term ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasRelatedConcept :taking-a-decision .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-1-a-res-50-100-1996-02-02-en a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :decides ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02-en .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-2-a-res-50-100-1996-02-02-en a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :decides ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02-en .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># A similar description of the previous term, but by means of its Spanish<br
+/># translation.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:decide a allot:Term ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasRelatedConcept :taking-a-decision .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-1-a-res-50-100-1996-02-02-es a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :decide ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02-es .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:annotation-2-a-res-50-100-1996-02-02-es a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasBody :decide ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    oa:hasTarget :a-res-50-100-1996-02-02-es .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:taking-a-decision a allot:Concept .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>What are all the terms that actually refer to the concept of taking a decision, and in which documents have been used?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?term ?document</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?term a allot:Term ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        undo:hasRelatedConcept :taking-a-decision .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?ann a undo:Annotation ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        oa:hasBody ?term ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        oa:hasTarget ?document</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 4</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> Giorgio Napolitano has been President of Italy for the first time from 15th of May 2006 to 22th of April 2013, when he resigned. He has been elected again on 22th of April 2013, and he has been President of Italy for the second time until 14th of January 2015, when he resigned for the second time. He has been substituted by Sergio Mattarella, who starts his mandate as President of Italy on 3rd of February 2015, formerly judge of the Constitutional Court of Italy from 11th of October 2011 to 2nd of February 2015.</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># Giorgio Napolitano who has been President of Italy in two distinct periods:<br
+/># the first one from 2006 to 2013, and the second one from 2013 to 2015.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:giorgio-napolitano a undo:Agent ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:hasValue</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :giorgio-napolitano-president-of-italy-2006-2013 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :giorgio-napolitano-president-of-italy-2013-2015 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># First mandate of Giorgio Napolitano as President of Italy.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:giorgio-napolitano-president-of-italy-2006-2013 a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :president ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :2006-2013 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withinContext :italy .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># Second mandate of Giorgio Napolitano as President of Italy.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:giorgio-napolitano-president-of-italy-2013-2015 a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :president ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :2013-2015 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withinContext :italy .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:president a allot:Role .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The intervals defining the two mandates of Giorgio Napolitano as<br
+/># President of Italy.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2006-2013 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2006-05-15T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalEndDate "2013-04-22T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2013-2015 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2013-04-22T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalEndDate "2015-01-14T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:italy a allot:Reference .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># Sergio Mattarella in relation to its roles of judge of the Constitutional<br
+/># Court of Italy before becoming President of Italy in 2015.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:sergio-mattarella a undo:Agent ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:hasValue</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :sergio-mattarella-judge-constitutional-court-of-italy-2011-2015 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :sergio-mattarella-president-of-italy-since-2015.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># Sergio Mattarella acting as a judge.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:sergio-mattarella-judge-constitutional-court-of-italy-2011-2015 a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :judge ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :2011-2015 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withinContext :constitutional-court-of-italy .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># Sergio Mattarella acting as President of Italy.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:sergio-mattarella-president-of-italy-since-2015 a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :president ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :since-2015 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withinContext :italy .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The intervals related to Sergio Mattarella’s roles.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2011-2015 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2011-10-11T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalEndDate "2015-02-03T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:since-2015 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2015-02-03T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:constitutional-court-of-italy a allot:Reference .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:judge a allot:Role .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>What are the current roles of all the agents?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?agent ?role ?context</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?agent a undo:Agent ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:hasValue ?value .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?value a undo:ValueInTimeAndContext ; </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withValue ?role ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withinContext ?context .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    FILTER NOT EXISTS {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?value tvc:atTime/ti:hasIntervalEndDate ?time</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?role a allot:Role .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question</span
+>: What roles have been held by Sergio Mattarella during his life?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?role ?context ?start ?end</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    :sergio-mattarella tvc:hasValue ?value .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?value a undo:ValueInTimeAndContext ; </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withValue ?role ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withinContext ?context ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:atTime ?time .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?time a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ti:hasIntervalStartDate ?start .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    OPTIONAL {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?time ti:hasIntervalEndDate ?end</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?role a allot:Role .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question</span
+>: How many times has an agent been assigned to a specific role?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?agent ?role ?context (count(?agent) AS ?count)</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?agent a undo:Agent ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:hasValue ?value .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?value a undo:ValueInTimeAndContext ; </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withValue ?role ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withinContext ?context .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?role a allot:Role .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>GROUP BY ?agent ?role ?context</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question</span
+>: Which roles are involved in particular contexts?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?context ?role</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?value a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withValue ?role ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withinContext ?context .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?role a allot:Role .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 5</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> A document has been in drafting from the 14th of May to the 14th of June 2016. Then, it has been under revision for the following two months, and finally published on the 1st of September 2016.</p
+><p
+class="p-Normal"
+lang="en-US"
+>Turtle:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The three statuses associated to the document.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:a-document a undo:Document ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:hasValue</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :document-in-drafting ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :document-under-revision ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :document-published .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The status of being in drafting.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:document-in-drafting a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :in-drafting ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :in-drafting-interval .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The status of being under revision.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:document-under-revision a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :under-revision ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :under-revision-interval .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The status of being published.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:document-published a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:withValue :published ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    tvc:atTime :published-interval .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The intervals defining how long the aforementioned status have been <br
+/># assigned to the document in consideration.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:in-drafting-interval a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2016-05-14T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalEndDate "2016-06-14T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:under-revision-interval a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2016-06-14T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalEndDate "2016-08-14T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:published-interval a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ti:hasIntervalStartDate "2016-09-01T00:00:00"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:in-drafting a undo:Status .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:under-revision a undo:Status .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:published a undo:Status .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>What are all the statuses that have been associated to all the documents?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT DISTINCT ?document ?status ?start ?end</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?document a undo:Document ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:hasValue ?value .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?value a undo:ValueInTimeAndContext ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:withValue ?status ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        tvc:atTime ?time .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?time a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ti:hasIntervalStartDate ?start .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    OPTIONAL {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?time ti:hasIntervalEndDate ?end</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?status a undo:Status .</span
+></p
+><p
+class="p-HtmlPre pb--last"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+lang="it-IT"
+>Scenario 6</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description:</span
+> The publication of a document should go through four phases, or steps:</p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>write, which will produce a document;</p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>review, that will produce comments starting from the input document;</p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>revision, that will produce a new version of the previous document corrected considering the comments produced by the previous step;</p
+><p
+class="p-ListParagraph pn-22-0 n-22-0"
+lang="en-US"
+>publication, which will assign the “published” status to that document.</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The four steps composing the workflow.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:publication a undo:Workflow ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:hasStep</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :step-1 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :step-2 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :step-3 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :step-4 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The definition of each step according to its type, including the link to<br
+/># the other step that follows the one in consideration (in any).</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-1 a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasStepType :write ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:hasNextStep :step-2 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:write a undo:StepType .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-2 a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasStepType :review ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:hasNextStep :step-3 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:review a undo:StepType .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-3 a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasStepType :revise ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:hasNextStep :step-4 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:revise a undo:StepType .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-4 a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    undo:hasStepType :publish .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:publish a undo:StepType .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question:</span
+> In which step of all the workflows the first version of a document has been produced?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT ?doc ?step </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?step a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        pwo:produces ?doc .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?doc a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    FILTER NOT EXISTS {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?another_step a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>            pwo:produces ?prev_version .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?prev_version frbr:revision+ ?doc</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>How many steps (on average) are used in each workflow?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT (avg(?n_step) as ?average)</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        SELECT ?workflow (count(?step) as ?n_step)</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>            ?workflow a undo:Workflow ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                pwo:hasStep ?step .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        } GROUP BY ?workflow</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>} GROUP BY ?workflow</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-IntenseQuote"
+>Scenario 7</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Description</span
+>: The Assistant of a Representative writes the first draft of a resolution from the 1st of March 2017 to the 5th of March 2017. On the 7th of March, the Representative revises it, and extends the introduction. From the 9th of March to the 10th of March, Assistant of the Representative finalizes the document. On the 11th of March, the State Member makes it available for review.</p
+><p
+class="p-Normal"
+lang="en-US"
+>On the 12th of March, the Office of the Presidency of the General Assembly read the draft. From the 13th of March to the 20th of March, the Office of the Presidency of the General Assembly writes a comment highlighting issues. The comment is then made available to the President of the General Assembly on the 21st of March.</p
+><p
+class="p-Normal"
+lang="en-US"
+>From the 22nd to the 27th of March, the Committee Number 1 revises the draft and addresses the main issues raised by the Office of the Presidency of the General Assembly. On the 28th, the draft is sent to the General Assembly.</p
+><p
+class="p-Normal"
+lang="en-US"
+>The General Assembly approves and publishes the resolution on the 31st of March.</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Turtle</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># A document that will become a resolution after the workflow execution, <br
+/># accompanied by all the versions that have been created during the process.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:future-resolution a undo:Document ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    allot:hasRealization</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :assistant-first-draft-resolution ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :member-rep-extended-introduction-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revised-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The first draft created by the assistant of the representative, and<br
+/># the related action of writing it.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:assistant-member-rep a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:assistant-first-draft-resolution a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-01_05 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-01T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-05T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:writing-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-1 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :assistant-member-rep ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :assistant-first-draft-resolution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-01_05 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The revision proposed by the representative, who extended<br
+/># the previous draft.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:member-rep a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:assistant-first-draft-resolution </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    frbr:revision :member-rep-extended-introduction-first-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:member-rep-extended-introduction-first-draft a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-07 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-07T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-07T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:extending-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-1 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :member-rep ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :assistant-first-draft-resolution ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :member-rep-extended-introduction-first-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-07 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The submission of the draft by the state member to the General Assembly.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:member-rep-extended-introduction-first-draft</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    frbr:revision :final-first-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:final-first-draft a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-09_10 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-09T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-10T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:revision-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-1 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :assistant-member-rep ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :member-rep-extended-introduction-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-09_10 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:member a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-11 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-11T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-11T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:making-available-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-1 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :member ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-11 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-1 pwo:produces :final-first-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The reading done by the Office of the Presidency of the General Assembly<br
+/># to the draft submitted.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:office-presidency-ga a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-12 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-12T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-12T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:reading-final-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-2 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :office-presidency-ga ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-12 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The creation of a comment that explains issues and proposes modification<br
+/># to the submitted draft. </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-13_20 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-13T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-20T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:comment a undo:Document ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    allot:hasRealization :comment-content .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+lang="it-IT"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:comment-content a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:writing-comment a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-2 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :office-presidency-ga ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :comment-content ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-13_20 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The comment is made available by the President of the General Assembly.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:president-ga a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-21 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-12T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-12T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:making-available-comment a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-2 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :office-presidency-ga ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :president-ga ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :comment-content ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-21 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-2 </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:needs :final-first-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:produces :comment-content .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The Committee 1 revising the draft according to the comment.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:committee-1 a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:final-first-draft</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    frbr:revision :revised-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:revised-draft a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-22_27 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-22T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-27T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:revision-final-first-draft a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-3 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :committee-1 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :final-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :comment ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revised-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-22_27 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The Committee 1 that sends the revision o the General Assembly.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:ga a undo:Agent .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-28 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-28T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-28T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:sending-revision a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-3 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :committee-1 ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revised-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :ga ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-28 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-3 </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:needs :final-first-draft , :comment ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:produces :revised-draft .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The draft resolution is reconfigured as a proper resolution, that is thus<br
+/># published by the General Assembly.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:future-resolution</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    frbr:transformation :resolution .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:resolution a undo:Resolution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    allot:hasRealization :resolution-text .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:resolution-text a undo:DocumentVersion .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:2017-03-31 a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalStartDate "2017-03-31T00:00:00"^^xsd:dateTime ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>     ti:hasIntervalEndDate "2017-03-31T23:59:59"^^xsd:dateTime .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:approving-and-publishing-resolution a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    taskex:executesTask :step-4 ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    part:hasParticipant </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revised-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :resolution-text ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :ga ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:happened :2017-03-31 .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:step-4</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:needs :revised-draft ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:produces :resolution-text .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+># The definition of the workflow execution, including all the actions<br
+/># that have been performed.</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>:publication-execution a undo:WorkflowExecution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:executes :publication ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    pwo:involvesAction</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :writing-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :extending-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revision-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :making-available-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :reading-final-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :writing-comment ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :making-available-comment ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :revision-final-first-draft ,</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :sending-revision ,</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        :approving-and-publishing-resolution .</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question: </span
+>How much did it take to executing each step in each workflow execution?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT ?execution ?step (round(?end - ?start) as ?minutes)</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>WHERE {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        SELECT ?execution ?step (min(?s_date) as ?start) (max(?e_date) as ?end) </span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>            ?execution a undo:WorkflowExecution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                pwo:involvesAction ?action .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>            ?action a undo:Action ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                taskex:executesTask ?step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                pwo:happened ?time .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>            ?time a undo:Interval ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                ti:hasIntervalStartDate ?s_date ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>                ti:hasIntervalEndDate ?e_date .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        } GROUP BY ?execution ?step</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>Natural language question</span
+>: What were the last entities produced by all the workflow executions?</p
+><p
+class="p-Normal"
+lang="en-US"
+><span
+style="font-weight: bold;"
+>SPARQL</span
+>:</p
+><div
+class="role-box"
+style="background-color: #F9F9F9; border-bottom-color: #2F6FAB; border-bottom-style: dashed; border-bottom-width: 0.75pt; border-left-color: #2F6FAB; border-left-style: dashed; border-left-width: 0.75pt; border-right-color: #2F6FAB; border-right-style: dashed; border-right-width: 0.75pt; border-top-color: #2F6FAB; border-top-style: dashed; border-top-width: 0.75pt; margin-bottom: 0pt; margin-left: 14.2pt; margin-right: 0pt; padding-bottom: 12pt; padding-left: 12pt; padding-right: 12pt; padding-top: 12pt;"
+><p
+class="p-HtmlPre pb--first"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>SELECT ?execution ?entity {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?execution a undo:WorkflowExecution ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        pwo:involvesAction/taskex:executesTask ?step .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    ?step a undo:Step ;</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        pwo:produces ?entity .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    FILTER NOT EXISTS {</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>        ?step pwo:hasNextStep ?another_step .</span
+></p
+><p
+class="p-HtmlPre pb--middle"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>    }</span
+></p
+><p
+class="p-HtmlPre pb--last"
+style="-ms-tab0-pos: 503.8pt; -ms-tab0: clear; -ms-tab1-pos: 481.6pt; -ms-tab1: left; margin-left: 0pt;"
+><span
+class="c-HtmlCode"
+style="font-size: 9pt;"
+>}</span
+></p
+></div
+><p
+class="p-Normal"
+></p
+></body
+></html
+>

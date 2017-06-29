@@ -1,0 +1,860 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html
+lang="en-GB"
+xmlns="http://www.w3.org/1999/xhtml"
+><head
+><meta
+content="text/html;charset=UTF-8"
+http-equiv="content-type"
+/><title
+>UNDO Structure</title
+><link
+href="index.css"
+rel="stylesheet"
+type="text/css"
+/><style
+type="text/css"
+>
+body {
+    counter-reset: n-4-0 0;
+}
+</style
+></head
+><body
+><p
+class="p-Heading1"
+id="_UNDO_Structure"
+lang="en-US"
+>UNDO Structure</p
+><p
+class="p-Normal"
+lang="en-US"
+>This section introduces the main ontological entities defined in the United Nations System Document Ontology (UNDO), available at <a
+href="https://w3id.org/un/ontology/undo"
+><span
+class="c-Hyperlink"
+>https://w3id.org/un/ontology/undo</span
+></a
+>. Note that all the prefixes used herein (<span
+class="c-HtmlCode"
+>dcterms</span
+>, <span
+class="c-HtmlCode"
+>fabio</span
+>, <span
+class="c-HtmlCode"
+>allot</span
+>, etc.) are systematically defined in the appendixes at the end of this document. </p
+><p
+class="p-Normal"
+lang="en-US"
+>UNDO reuses existing and well-known models so as to make the ontology interoperable in different context – all the reused ontologies are introduced in the annexes of this document. In particular, UNDO does not redefine properties that have been already defined elsewhere. For instance, all the data properties for describing the title (<span
+class="c-HtmlCode"
+>dcterms:title</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN7__"
+>7</a
+></span
+>, the year of publication (<span
+class="c-HtmlCode"
+>fabio:hasPublicationYear</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN8__"
+>8</a
+></span
+>, and other similar metadata, are already available in the <a
+href="http://purl.org/spar/fabio"
+><span
+class="c-Hyperlink"
+>FRBR-aligned Bibliographic Ontology (FaBiO)</span
+></a
+> to which UNDO is explicitly aligning with, and thus, in these cases, such properties should be preferred and used.</p
+><p
+class="p-Normal"
+lang="en-US"
+>So as to regulate the way the entities defined in such external models have been reused, we have applied the following guidelines:</p
+><p
+class="p-ListParagraph pn-8-0 n-8-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>some of these ontologies (i.e. ALLOT, FRBR DL, PWO, TVC, Time Interval, and Web Annotation Ontology) have been imported as a whole (by means of the property <span
+class="c-HtmlCode"
+>owl:imports</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN9__"
+>9</a
+></span
+>, since some of them have entities that are directly reused in UNDO for providing a description of the domain in consideration (e.g. we use <span
+class="c-HtmlCode"
+>allot:hasRealization</span
+> to link a document to its version in a specific language)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN10__"
+>10</a
+></span
+>;</p
+><p
+class="p-ListParagraph pn-8-0 n-8-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>some ontological entities defined in external models (i.e. DCTerms, FOAF, and ISO 639-1, referred via <span
+class="c-HtmlCode"
+>rdfs:isDefinedBy</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN11__"
+>11</a
+></span
+> have been reused in UNDO (e.g. <span
+class="c-HtmlCode"
+>dcterms:language</span
+>) without importing the original models since they have not been defined formally as OWL 2 DL ontologies;</p
+><p
+class="p-ListParagraph pn-8-0 n-8-0"
+lang="en-US"
+>other ontological entities defined in external models (i.e. FaBiO, LKIF Core, PRO, PSO, and SKOS, referred via <span
+class="c-HtmlCode"
+>rdfs:isDefinedBy</span
+>), which are proper OWL 2 DL ontologies, have been included for the sake of aligning UNDO with other relevant and existing models.</p
+><p
+class="p-Normal"
+lang="en-US"
+>However, since UNDO is intended as a domain ontology that can be extended by any party (e.g. a United Nations agency) for specific purposes, it is also possible to develop or reuse a different set of ontological entities for describing the part of the domain that are not explicitly defined in UNDO – taking care of keeping the ontology consistent with the underlying description logic of OWL 2.</p
+><p
+class="p-Normal"
+lang="en-US"
+>Currently, UNDO is able to describe the following entities:</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>documents and their versions (e.g. in different languages);</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>several relevant document types, organized in a taxonomy;</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>mentions of specific entities introduced in documents;</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>relations among entities (i.e. both documents and the entities they mention);</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>annotations, in order to link any RDF description to a particular document;</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>terms, i.e. tokens as they can appear in a text, and their semantics;</p
+><p
+class="p-ListParagraph pn-9-0 n-9-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>values that can change in time and context (such as agents’ roles and document statuses);</p
+><p
+class="p-ListParagraph pn-8-0 n-8-0"
+lang="en-US"
+>workflows and their executions. </p
+><p
+class="p-Normal"
+style="page-break-after: avoid; text-align: center;"
+><img
+alt="???"
+height="999"
+src="index_files/undo.png"
+width="547"
+/></p
+><p
+class="p-Caption"
+id="_Ref354559242"
+lang="en-US"
+>Figure 1. The Graffoo diagram of the United Nations System Document Ontology.</p
+><p
+class="p-Normal"
+lang="en-US"
+>The <a
+href="http://www.essepuntato.it/graffoo"
+><span
+class="c-Hyperlink"
+>Graffoo</span
+></a
+> diagram in <a
+class="role-ref-field"
+href="#_Ref354559242"
+>Figure 1</a
+> introduces the version of UNDO dated April 21, 2017. The following subsections provides a quick overview of all the entities defined.</p
+><p
+class="p-Heading3"
+id="__PAGE5__"
+>Documents and their versions</p
+><p
+class="p-Normal"
+lang="en-US"
+>Several existing models have tried to explain the difference between documents and their versions. By means of ALLOT – which in turn uses a well-known and robust model for characterizing bibliographic metadata, the <a
+href="https://www.ifla.org/publications/functional-requirements-for-bibliographic-records"
+><span
+class="c-Hyperlink"
+>Functional Requirements for Bibliographic Records (FRBR)</span
+></a
+> – UNDO separates documents (e.g. UN resolution A/RES/50/100) and versions (e.g. language versions) in two specific and distinct layers, characterized by two classes: <span
+class="c-HtmlCode"
+>undo:Document</span
+> and <span
+class="c-HtmlCode"
+>undo:DocumentVersion</span
+><span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN12__"
+>12</a
+></span
+>. </p
+><p
+class="p-Normal"
+lang="en-US"
+>The <span
+class="c-HtmlCode"
+>undo:Document</span
+>  class follows the FRBR classification, and maps to the FRBR Work level, and describes the document <span
+style="font-style: italic;"
+>essence</span
+>, independently from the revisions and/or translations that can characterize it in time. The <span
+class="c-HtmlCode"
+>undo:DocumentVersion</span
+> class for document versions maps to the FRBR Expression level, and is used for pointing to specific realizations of a document characterized by a particular and fixed <span
+style="font-style: italic;"
+>content</span
+>. For instance, a draft in English, an amended version of that draft, a translation in French are all different versions (i.e. FRBR Expressions) of the same document (i.e. FRBR Work).</p
+><p
+class="p-Normal"
+lang="en-US"
+>There are four properties available in UNDO that can be used for defining relations among these classes:</p
+><p
+class="p-ListParagraph pn-13-0 n-13-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>property <span
+class="c-HtmlCode"
+>allot:hasRealization</span
+>, which links a document with its versions;</p
+><p
+class="p-ListParagraph pn-13-0 n-13-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>property <span
+class="c-HtmlCode"
+>frbr:revision</span
+>, which links a specific version to another version of it (e.g. a draft that has been amended and revised) –  it is possible to add appropriate information concerning which document produced the revision, when the new revision is effective, and the list of the revisions produced by means of some of the models that have been aligned/imported by UNDO, i.e. PWO and FaBiO;</p
+><p
+class="p-ListParagraph pn-13-0 n-13-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>property <span
+class="c-HtmlCode"
+>dcterms:language</span
+>, which allows one to specify the language associated to the specific version in consideration – the link between translations in different languages can be linked by means of the property <span
+class="c-HtmlCode"
+>frbr:translation</span
+><span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN13__"
+>13</a
+></span
+> defined in <a
+href="http://purl.org/spar/frbr"
+><span
+class="c-Hyperlink"
+>FRBR DL</span
+></a
+> to which UNDO aligns;</p
+><p
+class="p-ListParagraph pn-13-0 n-13-0"
+lang="en-US"
+>property <span
+class="c-HtmlCode"
+>frbr:transformation</span
+>, used for describing documents that are transformed into another original document (even of another type – see the following section) to a sufficient degree to warrant their being considered as new works (e.g. when the General Assembly publishes a new resolution from a draft provided by someone).</p
+><p
+class="p-Normal"
+lang="en-US"
+>It is worth mentioning that the characterization of the document components should be handled by means of the <a
+href="http://purl.org/spar/doco"
+><span
+class="c-Hyperlink"
+>Document Components Ontology (DoCO)</span
+></a
+>.</p
+><p
+class="p-Heading3"
+id="__PAGE6__"
+>Document types</p
+><p
+class="p-Normal"
+lang="en-US"
+>While, on the one hand, the dichotomy between documents and their versions is an important aspect to address, on the other hand it is also crucial to provide an appropriate taxonomy of defining document types, so as to allow one to describe them appropriately. In UNDO, the class <span
+class="c-HtmlCode"
+>undo:Document</span
+> includes several subclasses taking care of providing appropriate descriptions for the main United Nations documents (<span
+class="c-HtmlCode"
+>undo:Resolution</span
+>, <span
+class="c-HtmlCode"
+>undo:Constitution</span
+>, <span
+class="c-HtmlCode"
+>undo:Standard</span
+>, etc.). Each document type is accompanied by a natural language description clarifying its role.</p
+><p
+class="p-Heading3"
+id="__PAGE7__"
+>Documents mentioning other entities</p
+><p
+class="p-Normal"
+lang="en-US"
+>The parliamentary, normative and legal documents published by the United Nations System of Organizations are full of references to real-world objects and concepts, such as other documents, people, organizations, legal terms, and roles. UNDO makes available the property <span
+class="c-HtmlCode"
+>allot:mentions</span
+> for linking a document (or one specific version of it) to a particular entity (defined by the class <span
+class="c-HtmlCode"
+>allot:Reference</span
+>) that is mentioned within it (e.g. that the resolution A/RES/50/100 mentions the Government of Turkey see <a
+href="http://undocs.org/A/RES/50/100"
+><span
+class="c-Hyperlink"
+>http://undocs.org/A/RES/50/100</span
+></a
+> ). This property allows building a sophisticated network of references to entities enabling the cross-navigation between documents and other related resources.</p
+><p
+class="p-Heading3"
+id="__PAGE8__"
+>Relations</p
+><p
+class="p-Normal"
+lang="en-US"
+>While the property <span
+class="c-HtmlCode"
+>allot:mentions</span
+> is important, however, it does not allow one to specify the particular semantics justifying a particular mention of an entity in a document – e.g., recalling the example in the previous section, the reasons why the resolution A/RES/50/100 mentions the Government of Turkey. Additionally other relevant relations between non-document entities, that are evident from reading the natural language arguments carried by the document content, cannot be described – e.g. the sentence of the aforementioned resolution where “the General Assembly reiterates its gratitude to the Government of Turkey”. Since it is not possible to define all the kinds of relations that could be hidden in the content of any United Nations document, UNDO makes available a mechanism for defining such relations in a flexible way without changing the actual terminological specification of the ontology, i.e. its <span
+style="font-style: italic;"
+>TBox</span
+>.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In logics terminology, a TBox (that stands for <span
+style="font-style: italic;"
+>Terminological Box</span
+>) is the part of an ontology that deals with the axioms that define its classes and properties. In particular, the TBox is the part of an ontology that allows the use of computational methods for inferring new knowledge starting from the assertions that are already available in a knowledge base. While the part of an ontology related to the instances of each class and the assertions between instances are actually part of the <span
+style="font-style: italic;"
+>ABox</span
+>, i.e. the <span
+style="font-style: italic;"
+>Assersion Box</span
+>. It is crucial that the ontology as a whole (i.e. the TBox+ABox) is <span
+style="font-style: italic;"
+>logically consistent</span
+>, i.e. it does not have issues that break its logical coherence, e.g. leading to paradoxes from a pure logical perspective.</p
+><p
+class="p-Normal"
+lang="en-US"
+>Thus, any modification introduced in the TBox (even the smallest one) can cause issues in the ontology that, in turn, can result in making it inconsistent. In fact these modifications should be performed only if they are strictly necessary and by experts in the field of ontology engineering<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN14__"
+>14</a
+></span
+>. It is worth mentioning that this is an important aspect to take into consideration when developing an ontology that could be adopted and adapted by different parties for several purposes.</p
+><p
+class="p-Normal"
+lang="en-US"
+>UNDO, as basic ontology for describing the United Nations document domain, has been developed with the intent of being extended by a particular United Nation agency according its specific need. However, it is unlikely that each agency has an expert in ontology engineering methodologies and Semantic Web that guarantees the correct extension of UNDO without making everything inconsistent. <span
+class="c-CommentReference"
+></span
+>In order to avoid this issue (or at least decreasing its changes of happening), relations between entities have been defined by means of a particular class, i.e. <span
+class="c-HtmlCode"
+>undo:Relation</span
+>, so as to enable the specification of the semantics of such relations by using individuals of the class <span
+class="c-HtmlCode"
+>allot:Concept</span
+>. This approach is quite robust, since if one need a new semantics for a relation s/he has only to add a new individual to the class <span
+class="c-HtmlCode"
+>allot:Concept</span
+>, thus modifying only the ABox of the ontology and, implicitly, reducing the chances of introducing inconsistencies. In addition, this approach is very flexible, since it allows extending the set of relations applicable between entities whenever there is a specific need.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In particular, the properties that can be used with the instances of the class <span
+class="c-HtmlCode"
+>undo:Relation</span
+> are introduced as follows:</p
+><p
+class="p-ListParagraph pn-14-0 n-14-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the property <span
+class="c-HtmlCode"
+>undo:hasProponent</span
+> is used for identifying the subject entity of a relation (e.g. the “General Assembly” described in the sentence “the General Assembly reiterates its gratitude to the Government of Turkey”);</p
+><p
+class="p-ListParagraph pn-14-0 n-14-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the property <span
+class="c-HtmlCode"
+>undo:hasReceiver</span
+> is used for identifying the object entity of a relation (e.g. the “Government of Turkey”, in the previous example);</p
+><p
+class="p-ListParagraph pn-14-0 n-14-0"
+lang="en-US"
+>the property <span
+class="c-HtmlCode"
+>undo:hasSemantics</span
+> is used for specifying the particular concept defining the semantics of the relation. </p
+><p
+class="p-Heading3"
+id="__PAGE9__"
+>Annotations to documents</p
+><p
+class="p-Normal"
+lang="en-US"
+>By reading the document content, different people can derive different (even contrasting) interpretations of the same text. For instance, the same sentence, e.g. “Encourages all relevant non-governmental organizations […] to participate in and contribute to the Conference” can be read as an invitation or as a reproach for having not participating and contributing enough yet. Therefore, it is important to have some mechanism for allowing the existence of all these different interpretations in a way that is understandable and still consistent from an ontological perspective.</p
+><p
+class="p-Normal"
+lang="en-US"
+>For this reason, UNDO reuses the framework defined in the <a
+href="https://www.w3.org/ns/oa"
+><span
+class="c-Hyperlink"
+>Web Annotation Ontology</span
+></a
+> that allows annotating documents (or even portions of them) by means of other entities, like Relations as introduced in the previous section. In particular, every annotation in UNDO is defined as an individual of the class <span
+class="c-HtmlCode"
+>undo:Annotation</span
+>, and the following properties are used to linking an entity to the document it annotates:</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the property <span
+class="c-HtmlCode"
+>oa:hasBody</span
+> is used to specify the body of the annotation to be attached to the document<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN15__"
+>15</a
+></span
+>;</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+>the property <span
+class="c-HtmlCode"
+>oa:hasTarget</span
+> is used to indicate the particular document (described according to any of the available FRBR levels) to which the annotation is specified.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In addition, each document (or any of its parts) can be explicitly annotated (using instances of <span
+class="c-HtmlCode"
+>undo:Annotation</span
+>) by someone with all these relations in order to create a formal connection between the text and the entities its introduces.</p
+><p
+class="p-Heading3"
+id="__PAGE10__"
+>Terms and their semantics</p
+><p
+class="p-Normal"
+lang="en-US"
+>Broadly speaking, terms are words or groups of words whose meanings are defined in a formal and precise manner by means of specific concepts. Thus, terms can refer to nouns (e.g. “computer keyboard”), verbs (e.g. “decide”), persons (e.g. “John”), cities (e.g. “New York”), etc., they can share the same textual content while being homonyms (e.g. the city “Paris” and the person “Paris”), they can refer to the same meaning (e.g. the third person verb “decides” in English and its related in Spanish, “decide”), and so on.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In UNDO the class <span
+class="c-HtmlCode"
+>allot:Term</span
+> is used to define terms, while the property <span
+class="c-HtmlCode"
+>undo:hasRelatedConcept</span
+> enables to link a term to the concept (introduced by the class <span
+class="c-HtmlCode"
+>allot:Concept</span
+>) defining the meaning of the term in consideration.</p
+><p
+class="p-Heading3"
+id="__PAGE11__"
+>Values, time and context</p
+><p
+class="p-Normal"
+lang="en-US"
+>Several kinds of objects can be involved in situations (<span
+class="c-HtmlCode"
+>undo:ValueInTimeAndContext</span
+>) describing them as holding a certain value (<span
+class="c-HtmlCode"
+>tvc:withValue</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN16__"
+>16</a
+></span
+> associated for a specific interval (<span
+class="c-HtmlCode"
+>tvc:atTime</span
+>) or according to a specific context (<span
+class="c-HtmlCode"
+>tvc:withinContext</span
+>). For instance, agents having a particular role (e.g. being the President of the United Nations General Assembly for the whole 2016) or documents holding a particular status (e.g. a document that has been under-review from September 2016 to October 2016) in a specific time and/or related to a particular context are examples for these situations.</p
+><p
+class="p-Normal"
+lang="en-US"
+>In UNDO these situations can be described by means of the class <span
+class="c-HtmlCode"
+>undo:ValueInTimeAndContext</span
+>, which introduces the framework defined by the <a
+href="http://www.essepuntato.it/2012/04/tvc"
+><span
+class="c-Hyperlink"
+>Time-indexed Value in Time (TVC) ontology pattern</span
+></a
+> for defining in details all the aforementioned temporal and contextual aspects. In particular, it allows to specify:</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the entity holding such value (e.g. an agent or a document) by means of the property <span
+class="c-HtmlCode"
+>tvc:hasValue</span
+>;</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the value held (e.g. a role or a status) by means of the property <span
+class="c-HtmlCode"
+>tvc:withValue</span
+>;</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>the time defining when such value is held (e.g. from 2006 to 2015) using the property <span
+class="c-HtmlCode"
+>tvc:atTime</span
+>;</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+>the context to which the scenario applies (e.g. the United Nations General Assembly) using the property <span
+class="c-HtmlCode"
+>tvc:withinContext</span
+>.</p
+><p
+class="p-Heading3"
+id="__PAGE12__"
+>Workflows and their executions</p
+><p
+class="p-Normal"
+lang="en-US"
+>Keeping track of the processes concerning the creation and modification of documents is a crucial task to address in the legal and legislative domain. Each of these processes, commonly called a workflow, is actually composed of a sequence of steps. Each step results in some outputs (e.g. a review) starting from some inputs (e.g. a document). </p
+><p
+class="p-Normal"
+lang="en-US"
+>In UNDO, workflows can be described from two different points of view, by reusing the framework implemented in the <a
+href="http://purl.org/spar/pwo"
+><span
+class="c-Hyperlink"
+>Publishing Workflow Ontology (PWO)</span
+></a
+>. There is the declaration of the workflow schema, or simply the workflow (<span
+class="c-HtmlCode"
+>undo:Workflow</span
+>), which is how a specific process (e.g. the publication of a document) is organized in sequential steps (<span
+class="c-HtmlCode"
+>undo:Step</span
+>), where each step:</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>has a specific type (property <span
+class="c-HtmlCode"
+>undo:hasStepType</span
+>);</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>needs some input (property <span
+class="c-HtmlCode"
+>pwo:needs</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN17__"
+>17</a
+></span
+>;</p
+><p
+class="p-ListParagraph pn-15-0 n-15-0"
+lang="en-US"
+>produces a particular output (property <span
+class="c-HtmlCode"
+>pwo:produces</span
+>). </p
+><p
+class="p-Normal"
+lang="en-US"
+>On the other hand, each particular execution of a workflow (<span
+class="c-HtmlCode"
+>undo:WorkflowExecution</span
+>) is a specific entity <span
+style="font-style: italic;"
+>per se</span
+>, it is usually composed by sets of actions (<span
+class="c-HtmlCode"
+>undo:Action</span
+>), and each action:</p
+><p
+class="p-ListParagraph pn-17-0 n-17-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>addresses (part of) a particular step defined in the workflow in consideration (property <span
+class="c-HtmlCode"
+>taskex:executesTask</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN18__"
+>18</a
+></span
+>;</p
+><p
+class="p-ListParagraph pn-17-0 n-17-0"
+lang="en-US"
+style="margin-bottom: 0pt;"
+>involves entities as participants (<span
+class="c-HtmlCode"
+>part:hasParticipant</span
+>)<span
+class="c-FootnoteReference"
+><a
+class="role-footnote-ref"
+href="#__FN19__"
+>19</a
+></span
+>;</p
+><p
+class="p-ListParagraph pn-17-0 n-17-0"
+lang="en-US"
+>is executed within a particular interval (<span
+class="c-HtmlCode"
+>pwo:happened</span
+>).</p
+><p
+class="p-Normal"
+lang="en-US"
+>It is worth mentioning that this module of UNDO is able to describe the full characterization that Akoma Ntoso provides in its specification about document workflows and lifecycles –  the latter by means of the class <span
+class="c-HtmlCode"
+>undo:Lifecycle</span
+>.</p
+><div
+class="role-footnotes"
+><hr
+class="role-notes-separator"
+/><div
+class="role-footnote"
+id="__FN7__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>7 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “dcterms” stands for “http://purl.org/dc/terms/”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN8__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>8 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “fabio” stands for “http://purl.org/spar/fabio/”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN9__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>9 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “owl” stands for “http://www.w3.org/2002/07/owl#”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN10__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>10 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “allot” stands for “https://w3id.org/akn/ontology/allot/”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN11__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>11 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “rdfs” stands for “http://www.w3.org/2000/01/rdf-schema#”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN12__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>12 </span
+> The prefix “undo” stands for “https://w3id.org/un/ontology/undo”.</p
+></div
+><div
+class="role-footnote"
+id="__FN13__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>13 </span
+> The prefix “frbr” stands for “http://purl.org/vocab/frbr/core#”.</p
+></div
+><div
+class="role-footnote"
+id="__FN14__"
+><p
+class="p-FootnoteText"
+lang="en-US"
+><span
+class="c-FootnoteReference"
+>14 </span
+> It is worth mentioning that modification to the ABox can also result in making the whole ontology inconsistent. However, this scenario means that the TBox had already flaws that were not caught at the time of the development.</p
+></div
+><div
+class="role-footnote"
+id="__FN15__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>15 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “oa” stands for “http://www.w3.org/ns/oa#”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN16__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>16 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “tvc” stands for “http://www.essepuntato.it/2012/04/tvc/”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN17__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>17 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “pwo” stands for “http://purl.org/spar/pwo/”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN18__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>18 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “taskex” stands for “http://www.ontologydesignpatterns.org/cp/owl/taskexecution.owl#”.</span
+></p
+></div
+><div
+class="role-footnote"
+id="__FN19__"
+><p
+class="p-FootnoteText"
+><span
+class="c-FootnoteReference"
+>19 </span
+> <span
+style="font-size: 8pt;"
+>The prefix “part” stands for “http://www.ontologydesignpatterns.org/cp/owl/participation.owl#”.</span
+></p
+></div
+></div
+></body
+></html
+>
