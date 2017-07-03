@@ -91,11 +91,19 @@ td {
 
 .p-Heading2 {
     -ms-outlineLvl: 1;
+    border-bottom-color: #FFC000;
+    border-bottom-style: solid;
+    border-bottom-width: 1pt;
+    border-top-color: #FFC000;
+    border-top-style: solid;
+    border-top-width: 1pt;
     color: #4F81BD;
     font-family: Calibri;
     font-size: 14pt;
     margin-bottom: 6pt;
     margin-top: 10pt;
+    padding-bottom: 1pt;
+    padding-top: 1pt;
     page-break-after: avoid;
     page-break-inside: avoid;
     text-align: justify;
@@ -103,13 +111,12 @@ td {
 
 .p-Heading3 {
     -ms-outlineLvl: 2;
-    color: #4F81BD;
+    background-color: #C4BC96;
+    color: #FF0000;
     font-family: Calibri;
     font-weight: bold;
     margin-bottom: 6pt;
-    margin-top: 10pt;
-    page-break-after: avoid;
-    page-break-inside: avoid;
+    margin-top: 24pt;
     text-align: justify;
 }
 
@@ -228,6 +235,33 @@ td {
     margin-bottom: 6pt;
     margin-top: 6pt;
     text-align: justify;
+}
+
+.p-TOC3 {
+    -ms-tab0-pos: 481.1pt;
+    -ms-tab0: right;
+    background-color: #DBE5F1;
+    font-family: Cambria;
+    font-size: 11pt;
+    font-variant: small-caps;
+    margin-bottom: 0pt;
+    margin-left: 36pt;
+    margin-top: 0pt;
+    text-align: left;
+    text-indent: -18pt;
+}
+
+.p-endnote {
+    border-top-color: #808080;
+    border-top-style: solid;
+    border-top-width: 0.75pt;
+    color: #808080;
+    font-family: "Times New Roman";
+    font-size: 8.5pt;
+    margin-bottom: 5pt;
+    margin-top: 30pt;
+    padding-top: 8pt;
+    text-align: center;
 }
 
 .pn-10-0 {
@@ -529,6 +563,134 @@ td {
     display: block;
 }
 
+.pn-40-0 {
+    -ms-tab0-pos: 36pt;
+    -ms-tab0: num;
+    margin-left: 36pt;
+    text-indent: -18pt;
+}
+
+.n-40-0 {
+    -ms-lvlJc: left;
+    -ms-lvlText-font-family: Symbol;
+    -ms-lvlText: "";
+    -ms-numFmt: bullet;
+    -ms-start: 1;
+}
+
+.n-40-0:before {
+    content: "•";
+    float: left;
+    font-size: 10pt;
+    width: 18pt;
+}
+
+.n-40-0:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.pn-45-0 {
+    margin-left: 36pt;
+    text-indent: -18pt;
+}
+
+.n-45-0 {
+    -ms-lvlJc: left;
+    -ms-lvlText-font-family: Symbol;
+    -ms-lvlText: "";
+    -ms-numFmt: bullet;
+    -ms-start: 1;
+}
+
+.n-45-0:before {
+    content: "•";
+    float: left;
+    width: 18pt;
+}
+
+.n-45-0:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.pn-46-0 {
+    margin-left: 36pt;
+    text-indent: -18pt;
+}
+
+.n-46-0 {
+    -ms-lvlJc: left;
+    -ms-lvlText-font-family: Symbol;
+    -ms-lvlText: "";
+    -ms-numFmt: bullet;
+    -ms-start: 1;
+}
+
+.n-46-0:before {
+    content: "•";
+    float: left;
+    width: 18pt;
+}
+
+.n-46-0:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.pn-47-0 {
+    margin-left: 36pt;
+    text-indent: -18pt;
+}
+
+.n-47-0 {
+    -ms-lvlJc: left;
+    -ms-lvlText-font-family: Symbol;
+    -ms-lvlText: "";
+    -ms-numFmt: bullet;
+    -ms-start: 1;
+}
+
+.n-47-0:before {
+    content: "•";
+    float: left;
+    width: 18pt;
+}
+
+.n-47-0:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.pn-48-0 {
+    margin-left: 36pt;
+    text-indent: -18pt;
+}
+
+.n-48-0 {
+    -ms-lvlJc: left;
+    -ms-lvlText-font-family: Symbol;
+    -ms-lvlText: "";
+    -ms-numFmt: bullet;
+    -ms-start: 1;
+}
+
+.n-48-0:before {
+    content: "•";
+    float: left;
+    width: 18pt;
+}
+
+.n-48-0:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 .pn-5-0 {
     margin-left: 36pt;
     text-indent: -18pt;
@@ -629,8 +791,8 @@ td {
     display: block;
 }
 
-.c-CommentReference {
-    font-size: 8pt;
+.c-Emphasis {
+    font-style: italic;
 }
 
 .c-FootnoteReference {
@@ -645,6 +807,19 @@ td {
 .c-Hyperlink {
     color: #0000FF;
     text-decoration: underline;
+}
+
+.c-Strong {
+    font-weight: bold;
+}
+
+.c-dotted1 {
+
+}
+
+.c-logic1 {
+    color: #800080;
+    font-weight: bold;
 }
 
 .pb--first {
