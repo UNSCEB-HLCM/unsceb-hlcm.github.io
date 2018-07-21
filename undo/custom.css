@@ -1,0 +1,25 @@
+.toc-entry-0,
+.toc-entry-1,
+.toc-entry-2,
+.toc-entry-3,
+.toc-entry-4,
+.toc-entry-5,
+.toc-entry-6,
+.toc-entry-7,
+.toc-entry-8,
+.toc-entry-9 {
+    font-family: Calibri;
+    font-size: 11pt;
+    margin: 0.25em 0px;
+}
+
+.toc-entry-2 { margin-left: 4ex; }
+.toc-entry-3 { margin-left: 8ex; }
+.toc-entry-4 { margin-left: 12ex; }
+.toc-entry-5 { margin-left: 16ex; }
+.toc-entry-6 { margin-left: 20ex; }
+.toc-entry-7 { margin-left: 24ex; }
+.toc-entry-8 { margin-left: 28ex; }
+.toc-entry-9 { margin-left: 32ex; }
+.toc-entry-10 { margin-left: 36ex; }
+.toc-entry-0{display:none;}
